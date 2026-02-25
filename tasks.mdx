@@ -1,0 +1,41 @@
+---
+title: 'Understanding Tasks: The Building Blocks of Mind Dump'
+description: >-
+  Discover how 'Tasks' function as the universal building blocks of the Mind
+  Dump ecosystem. This section clarifies the terminology and explains how every
+  piece of information you save—whether a simple to-do item, a comprehensive
+  client profile, or a web bookmark—is stored as a highly adaptable Task record,
+  providing the essential fuel that powers the platform's dynamic views,
+  relational linking, and AI capabilities.
+---
+If you are using a Knowledge Base session to store your favourite recipes or manage a personal CRM, you might find it slightly unusual to click a button labelled "Add Task" to create a new entry.
+
+To understand why this is, it helps to have a brief history of the platform. Mind Dump began its life purely as a highly capable task management system. Over time, its underlying architecture proved to be so flexible that it naturally evolved into a comprehensive, multi-purpose database and knowledge manager. While changing the button labels throughout the app would be technically simple, the developer deliberately chose to keep the term "Task" for continuity.
+
+In the Mind Dump ecosystem, it is best to think of the word **Task** not just as a chore you need to complete, but as a **universal data record**.
+
+#### The Role of Tasks as Data Storage Components
+
+If a Session is your dedicated filing cabinet (your personal database), a Task is the individual manila folder you place inside of it.
+
+Every single piece of information you put into Mind Dump is stored as a Task. Whether you are saving a website bookmark, creating a client profile, drafting a chapter of a book, or actually scheduling a doctor's appointment, you are creating a Task record in the backend.
+
+A Task acts as a highly adaptable container. At its foundation, it holds core information like a title (`task_text`), a due date, an urgency level, and whether or not it has been completed. However, its true power lies in its ability to expand. When you add Custom Fields to a Session, those fields attach themselves directly to the Tasks within that Session, transforming them from simple to-do items into rich, multi-dimensional database objects.
+
+#### How Task Data Drives Mind Dump's Features
+
+Because every piece of data is structurally a "Task," Mind Dump's extensive features can interact with all of your information universally. The data held within a single Task acts as the fuel that powers the entire application's dynamic views and tools:
+
+- **Execution and Planning:** A Task's `due_date` and `estimated_time` fields automatically feed into the **Calendar View**, allowing you to physically drag and drop your records onto an hourly schedule. These same dates power chronological **Kanban Boards**, dropping tasks into columns like "Today," "Tomorrow," or "Overdue".
+
+- **Visualising Workflows:** If a Task contains custom data (like a dropdown field for "Project Phase"), the **Kanban Board** can dynamically group your Tasks into columns based on those specific field values.
+
+- **Building Hierarchies:** Tasks possess the ability to link to a "Parent Task". This relationship data is what allows the **Outline View** to automatically generate complex, numbered document structures and the **Mind Map** to visualise branching, bilateral trees of information.
+
+- **Communication & Context:** Every Task contains an "Activity Stream." This allows the Task to act as a hub for notes, but also as a direct link to your **Email Inbox**. Incoming emails can be attached to a Task as context, or an entire email can be converted into a brand new Task record itself.
+
+- **Knowledge Mapping:** Tasks can be bidirectionally linked to *other* Tasks across completely different Sessions, creating a web of interconnected knowledge that you can easily navigate.
+
+- **AI Analysis:** The rich data within a Task—including its custom fields, urgency, notes, and completion status—is packaged and sent to the **AI Assistant**. This allows the AI to provide deep contextual insights, generate daily digests, or draft content specifically tailored to that exact record.
+
+By standardising every entry as a "Task," Mind Dump ensures that no matter what kind of information you are storing, you have access to the exact same powerful suite of organisational, visual, and analytical tools.

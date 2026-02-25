@@ -23,13 +23,8 @@
             "icon": "rocket",
             "pages": [
               {
-                "title": "Introduction-1",
-                "path": "introduction-1",
-                "icon": "home"
-              },
-              {
                 "title": "Introduction",
-                "path": "introduction",
+                "path": "introduction-1",
                 "icon": "home"
               },
               {
@@ -44,9 +39,44 @@
             "icon": "layers",
             "pages": [
               {
+                "title": "Personal Databases",
+                "path": "personal-database",
+                "icon": "database"
+              },
+              {
+                "title": "Sessions",
+                "path": "sessions",
+                "icon": "lucide-table2"
+              },
+              {
+                "title": "Tasks",
+                "path": "tasks",
+                "icon": "activity"
+              },
+              {
+                "title": "Mind Map",
+                "path": "mind-map",
+                "icon": "lucide-map"
+              },
+              {
+                "title": "Kanban",
+                "path": "kanban",
+                "icon": "columns3-icon"
+              },
+              {
                 "title": "Features",
                 "path": "features",
                 "icon": "file-text"
+              }
+            ]
+          },
+          {
+            "group": "First Steps",
+            "pages": [
+              {
+                "title": "Creating Your First Task",
+                "path": "creating-your-first-task",
+                "icon": "database"
               }
             ]
           },
