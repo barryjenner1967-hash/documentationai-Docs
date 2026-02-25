@@ -23,6 +23,11 @@
             "icon": "rocket",
             "pages": [
               {
+                "title": "Introduction-1",
+                "path": "introduction-1",
+                "icon": "home"
+              },
+              {
                 "title": "Introduction",
                 "path": "introduction",
                 "icon": "home"
