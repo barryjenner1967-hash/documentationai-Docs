@@ -1,0 +1,157 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Mind Dump, including version history and new features.
+---
+
+## Recent Updates
+
+Stay informed about the latest releases. You can check your current version in the app settings under `Account > Version`.
+
+<Update label="2024-10-15" description="v0.3.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added **Report Builder** with drag-and-drop fields, sorting, grouping, and filters for custom task reports
+- Introduced **Customise Card Layout** allowing you to toggle fields, reorder, and adjust hover interactions
+- New **Create Shareable Link** for public reports (with privacy warning)
+- Enhanced **Create a Mixed View** for combining task lists dynamically
+
+## Improvements
+
+- Updated login flow with "Keep me logged in for 7 days" option and better session management
+- Improved search with clear results counter and "Clear search" button
+- Added timezone loading indicator for accurate task scheduling
+
+## Bug Fixes
+
+- Fixed scratch pad counter display issues
+- Resolved unsaved changes confirmation dialogs for better UX
+
+</Update>
+
+<Update label="2024-09-20" description="v0.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Added **Add New Task** modal with direct entry and "Send to Mind Dump" capture
+- Introduced task search with real-time results
+- New scratch pad for quick thought capture
+
+## Improvements
+
+- Enhanced password reset flow with email link delivery
+- Better active session status with unlock indicator
+
+## Bug Fixes
+
+- Fixed timezone detection for relative dates like "today" and "tomorrow"
+- Resolved loading states for fields and previews
+
+</Update>
+
+<Update label="2024-08-10" description="v0.1.0" tags={["feature"]}>
+
+## Initial Release
+
+- Core task management with login, task entry, and basic views
+- Scratch pad for instant capture
+- Basic customization options
+
+</Update>
+
+## Migration Guide
+
+Most updates are seamless, but review these steps for v0.3.0 if you encounter issues.
+
+<Steps>
+  <Step title="Backup Your Data" icon="database">
+
+  Export your tasks via the Report Builder before updating.
+
+  ```
+  1. Open Report Builder
+  2. Select all fields
+  3. Generate and download CSV
+  ```
+
+  </Step>
+  <Step title="Update the App" icon="download">
+
+  Refresh your browser or clear cache.
+
+  <CodeGroup tabs="Browser,Progressive Web App">
+  ```bash
+  # Hard refresh
+  Ctrl+Shift+R (Windows/Linux)
+  Cmd+Shift+R (macOS)
+  ```
+  ```bash
+  # PWA: Check for updates in app menu
+  # Or reinstall from minddump.uk
+  ```
+  </CodeGroup>
+
+  </Step>
+  <Step title="Verify Changes" icon="check-circle">
+
+  Test new features:
+
+  - Customize card layout
+  - Build a sample report
+  - Confirm session persists
+
+  </Step>
+</Steps>
+
+<Callout kind="alert" title="Breaking Changes">
+In v0.3.0, menu expansion now defaults to `300ms` delay. Adjust in settings if instant hover is preferred. No data loss occurs.
+</Callout>
+
+## Upcoming Features
+
+<Columns cols={2}>
+  <Card title="Advanced Filters" icon="filter" href="#">
+
+  Rule-based filtering with AND/OR logic and date ranges.
+
+  </Card>
+  <Card title="Collaborative Tasks" icon="users" href="#">
+
+  Real-time sharing and task assignment.
+
+  </Card>
+  <Card title="Mobile App" icon="smartphone" href="#">
+
+  Native iOS and Android support.
+
+  </Card>
+  <Card title="AI Suggestions" icon="zap" href="#">
+
+  Auto-categorize and prioritize tasks.
+
+  </Card>
+</Columns>
+
+<Expandable title="Migration Notes for Enterprise Users" default-open="false">
+
+If you're using custom integrations, update your webhook endpoints to the new format:
+
+````javascript
+// Old
+POST https://your-webhook-url.com/old-webhook
+
+// New (v0.3.0+)
+POST https://your-webhook-url.com/v1/webhook
+{
+  "event": "task_updated",
+  "data": { "id": "task-123", "status": "completed" }
+}
+````
+
+Contact support at `support@minddump.uk` for assistance.
+
+</Expandable>
+
+## Stay Updated
+
+Subscribe to notifications in your account settings or follow us on GitHub for release announcements. You receive email summaries for major versions.

@@ -1,0 +1,123 @@
+---
+title: Sessions and Settings Management
+description: Learn how to create, switch, and configure sessions to organize your work effectively in Mind Dump.
+---
+
+## Overview
+
+Sessions in Mind Dump let you separate projects, clients, or workflows into isolated spaces. You create sessions to group tasks, customize layouts per session, and share them with team members. Manage active sessions via the sidebar, bookmark frequently used ones, and tweak card layouts and hover behaviors for optimal productivity.
+
+<Callout kind="info">
+Sessions are stored locally in your browser. Export them regularly to avoid data loss when switching devices.
+</Callout>
+
+## Creating and Renaming Sessions
+
+Follow these steps to set up new sessions and keep your workspace organized.
+
+<Steps>
+  <Step title="Create a New Session" icon="plus">
+    Click the `+ New Session` button in the sidebar.
+
+    Name your session, such as `Project Alpha` or `Weekly Review`.
+
+    Select a color for quick visual identification.
+  </Step>
+  <Step title="Rename Existing Session" icon="edit">
+    Right-click a session in the sidebar or hover and select `Rename`.
+
+    Enter the new name and press `Enter` to save.
+  </Step>
+  <Step title="Switch Sessions" icon="switch">
+    Click any session in the sidebar to make it active. Your tasks and settings load instantly.
+  </Step>
+</Steps>
+
+## Customizing Card Layouts and Hover Settings
+
+Tailor card appearance and interactions to your workflow. Use the customization modal to toggle fields, reorder them, and adjust hover delays.
+
+<Tabs>
+  <Tab title="Card Fields" icon="layout">
+    Drag available fields like `Task Name`, `Due Date`, `Priority`, and `Tags` to reorder.
+
+    Toggle visibility for each field.
+
+    Preview changes live in the modal.
+  </Tab>
+  <Tab title="Hover Settings" icon="mouse-pointer">
+    Set `Menu Expansion Delay` from `0ms` (instant) to `1000ms` (click-only).
+
+    Recommended: `300ms` for smooth hover without accidental opens.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+Save layout changes per session. They apply only to the current active session.
+</Callout>
+
+## Sharing Sessions
+
+Share sessions with view or edit permissions via secure links.
+
+<Expandable title="Generate Share Link" default-open="true">
+  1. Select a session and click `Share`.
+  2. Choose `View Only` or `Edit Permissions`.
+  3. Copy the generated URL, like `https://minddump.uk/share/session/abc123`.
+  4. Revoke access anytime from session settings.
+
+  <Image
+    src="https://via.placeholder.com/800x400?text=Share+Modal"
+    alt="Session sharing modal screenshot"
+    width="800"
+    height="400"
+  />
+</Expandable>
+
+<Expandable title="Advanced Permissions">
+  Edit permissions allow collaborators to add tasks but not delete sessions. Use for team projects.
+</Expandable>
+
+## Settings Reference
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Menu Expansion Delay | Hover delay before menus open | `300ms` |
+| Include Completed Tasks | Show finished tasks in views | `false` |
+| Timezone Override | Force session timezone | Browser default |
+| Auto-Save Interval | How often changes save | `5s` |
+
+## Managing Active Sessions and Bookmarks
+
+Track your `Active Session` status at the top of the dashboard. Bookmark sessions by starring them in the sidebar—they appear in a quick-access `Bookmarks` section.
+
+<Columns cols={2}>
+  <Card title="Switch Active Session" icon="switch" href="#creating-and-managing-sessions">
+    Jump between sessions without losing context.
+  </Card>
+  <Card title="Export Bookmarks" icon="download" href="/quickstart">
+    Download all bookmarks as JSON for backup.
+  </Card>
+</Columns>
+
+For configuration examples, store custom settings in local storage:
+
+<CodeGroup tabs="JavaScript,JSON">
+  ```javascript
+  localStorage.setItem('minddump.session.layout', JSON.stringify({
+    fields: ['name', 'dueDate', 'priority'],
+    hoverDelay: 300
+  }));
+  ```
+  ```json
+  {
+    "fields": ["name", "dueDate", "priority"],
+    "hoverDelay": 300,
+    "includeCompleted": false
+  }
+  ```
+</CodeGroup>
+
+<Callout kind="success">
+Ready to optimize? Start by creating your first session and customizing its layout.
+</Callout>
