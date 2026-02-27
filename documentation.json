@@ -28,7 +28,12 @@
                 "icon": "home"
               },
               {
-                "title": "Quickstart",
+                "title": "Quick Start",
+                "path": "quick-start-1",
+                "icon": "lucide-sparkle"
+              },
+              {
+                "title": "Quickstart OLD",
                 "path": "quickstart",
                 "icon": "zap"
               }
