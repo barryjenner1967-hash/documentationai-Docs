@@ -31,6 +31,10 @@
                 "group": "Quick Start",
                 "pages": [
                   {
+                    "title": "A new page",
+                    "path": "a-new-page"
+                  },
+                  {
                     "title": "Adding Your First Task",
                     "path": "quick-start-1",
                     "icon": "lucide-sparkle"
@@ -42,7 +46,8 @@
                   },
                   {
                     "title": "View/Edit Task Details",
-                    "path": "view/edit-task-details"
+                    "path": "view/edit-task-details",
+                    "icon": "clipboard-edit-icon"
                   }
                 ]
               }
@@ -74,7 +79,8 @@
               },
               {
                 "title": "Task Notes",
-                "path": "task-notes"
+                "path": "task-notes",
+                "icon": "notebook-icon"
               },
               {
                 "title": "Urgency",
