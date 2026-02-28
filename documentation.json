@@ -28,14 +28,23 @@
                 "icon": "home"
               },
               {
-                "title": "Quick Start - Adding Your First Task",
-                "path": "quick-start-1",
-                "icon": "lucide-sparkle"
-              },
-              {
-                "title": "Exploring The Task List",
-                "path": "exploring-the-task-list",
-                "icon": "list"
+                "group": "Quick Start",
+                "pages": [
+                  {
+                    "title": "Adding Your First Task",
+                    "path": "quick-start-1",
+                    "icon": "lucide-sparkle"
+                  },
+                  {
+                    "title": "Exploring The Task List",
+                    "path": "exploring-the-task-list",
+                    "icon": "list"
+                  },
+                  {
+                    "title": "View/Edit Task Details",
+                    "path": "view/edit-task-details"
+                  }
+                ]
               }
             ]
           },
@@ -59,6 +68,20 @@
                 "icon": "activity"
               },
               {
+                "title": "Custom Fields",
+                "path": "custom-fields",
+                "icon": "align-center"
+              },
+              {
+                "title": "Task Notes",
+                "path": "task-notes"
+              },
+              {
+                "title": "Urgency",
+                "path": "urgency",
+                "icon": "timer-reset"
+              },
+              {
                 "title": "Mind Map",
                 "path": "mind-map",
                 "icon": "lucide-map"
@@ -67,11 +90,6 @@
                 "title": "Kanban",
                 "path": "kanban",
                 "icon": "columns3-icon"
-              },
-              {
-                "title": "Urgency",
-                "path": "urgency",
-                "icon": "timer-reset"
               }
             ]
           },

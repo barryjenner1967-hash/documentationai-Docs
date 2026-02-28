@@ -1,0 +1,39 @@
+---
+title: 'Custom Fields: Architecting Your Data'
+---
+While standard tasks with a name, due date, and urgency level are perfectly sufficient for a simple daily to-do list, your life and work are rarely that simple. If you want to track business expenses, you need to record currency. If you are building a personal address book, you need to store emails and phone numbers. If you are tracking software subscriptions, you need to know annual renewal dates and website links.
+
+This is why **Custom Fields** are essential. They act as the structural blueprint for your information. Rather than dumping all your unstructured thoughts into a single, messy text box, custom fields allow you to dictate the exact "shape" of the records you are storing. By defining specific field types, you enforce rules on your data—ensuring that a date is actually treated by the system as a date, a currency can be calculated, and a web link is immediately clickable.
+
+Crucially, **custom fields are declared at the Session level**. You do not add custom fields to an individual, isolated task. Instead, you apply a set of custom fields to an entire Session, and every single record within that Session automatically inherits that exact same structure. This isolation is what allows Mind Dump to act as a multi-purpose tool: you can build a "Financial Tracker" session that looks and behaves completely differently from a "Contact Directory" session, with neither database cluttering the other.
+
+#### Available Custom Field Types
+
+Mind Dump offers a comprehensive suite of thirteen field types, allowing you to build records that handle almost any kind of data:
+
+- **Text:** A standard, single-line text input. Ideal for short, unstructured entries like names, locations, reference codes, or job titles.
+
+- **Textarea:** A multi-line text box designed for longer, paragraph-form text. Perfect for extended descriptions, meeting summaries, or detailed notes.
+
+- **Number:** A strict numeric input. Useful for tracking precise quantities, ages, tracking numbers, or specific metrics.
+
+- **Currency:** A numeric input that automatically formats your entry to display with your globally preferred currency symbol (e.g., $, £, €). Essential for budget tracking, expense reports, or sales pipelines.
+
+- **Date:** A standard calendar picker for capturing specific, one-off dates, such as a project launch or a meeting day.
+
+- **Anniversary:** A highly specialized date field that captures only the **Month** and **Day**. This is designed specifically for recurring annual events—like birthdays, work anniversaries, or contract renewals—where the original year is irrelevant to the recurring nature of the date.
+
+- **Checkbox:** A simple true/false toggle. Perfect for tracking binary states like yes/no, approved/rejected, or shipped/pending.
+
+- **Dropdown:** A custom selection menu where you define the exact choices available (e.g., a "Project Phase" dropdown with options for *Planning, Drafting, Editing, Published*). This ensures data consistency by restricting entries to your pre-approved list.
+
+- **URL:** A web address field. Mind Dump automatically recognizes this data as a link, making it immediately clickable in your views and even capable of fetching website favicons for visual reference.
+
+- **Email:** A text field specifically formatted and validated to capture email addresses.
+
+- **Gallery (Images/Files):** A powerful file management field that integrates seamlessly with Google Drive. It allows you to attach existing files, upload new images, or even create brand-new Google Docs, Sheets, and Slides directly from the Mind Dump record.
+
+- **Secret (End-to-End Encrypted):** A highly secure field for sensitive information like passwords, PIN codes, or private client data. The data you enter here is encrypted directly in your browser before it ever reaches the server, meaning it remains completely unreadable until unlocked with your personal passphrase.
+
+- **Notification Date (Early Task Alerts):** A smart date field designed to trigger alerts *before* a final deadline. You can enter a specific manual date, or configure it to calculate an automatic offset (e.g., "Remind me 3 days before the Due Date").
+
