@@ -28,14 +28,14 @@
                 "icon": "home"
               },
               {
-                "title": "Quick Start",
+                "title": "Quick Start - Adding Your First Task",
                 "path": "quick-start-1",
                 "icon": "lucide-sparkle"
               },
               {
-                "title": "Quickstart OLD",
-                "path": "quickstart",
-                "icon": "zap"
+                "title": "Exploring The Task List",
+                "path": "exploring-the-task-list",
+                "icon": "list"
               }
             ]
           },
@@ -76,8 +76,13 @@
             ]
           },
           {
-            "group": "First Steps",
+            "group": "Legacy",
             "pages": [
+              {
+                "title": "Quickstart OLD",
+                "path": "quickstart",
+                "icon": "zap"
+              },
               {
                 "title": "Creating Your First Task",
                 "path": "creating-your-first-task",
