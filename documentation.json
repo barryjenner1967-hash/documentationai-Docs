@@ -69,9 +69,9 @@
                 "icon": "columns3-icon"
               },
               {
-                "title": "Features",
-                "path": "features",
-                "icon": "file-text"
+                "title": "Urgency",
+                "path": "urgency",
+                "icon": "timer-reset"
               }
             ]
           },
@@ -87,6 +87,11 @@
                 "title": "Creating Your First Task",
                 "path": "creating-your-first-task",
                 "icon": "database"
+              },
+              {
+                "title": "Features",
+                "path": "features",
+                "icon": "file-text"
               }
             ]
           },
