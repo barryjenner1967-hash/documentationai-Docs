@@ -31,10 +31,6 @@
                 "group": "Quick Start",
                 "pages": [
                   {
-                    "title": "A new page",
-                    "path": "a-new-page"
-                  },
-                  {
                     "title": "Adding Your First Task",
                     "path": "quick-start-1",
                     "icon": "lucide-sparkle"
