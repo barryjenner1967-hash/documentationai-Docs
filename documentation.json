@@ -74,6 +74,11 @@
                 "icon": "activity"
               },
               {
+                "title": "Tags",
+                "path": "tags",
+                "icon": "alert-octagon"
+              },
+              {
                 "title": "Custom Fields",
                 "path": "custom-fields",
                 "icon": "align-center"
