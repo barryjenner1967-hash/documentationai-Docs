@@ -49,6 +49,11 @@
                     "title": "Essential Configuration Steps",
                     "path": "essential-configuration-steps",
                     "icon": "lucide-table-config"
+                  },
+                  {
+                    "title": "Creating & Using Tags",
+                    "path": "creating-using-tags",
+                    "icon": "alert-octagon"
                   }
                 ]
               }

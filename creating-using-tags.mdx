@@ -1,0 +1,95 @@
+---
+title: 'Comprehensive Guide to Tags: Tag Management'
+description: >-
+  While tags can be applied to tasks on the fly, the central hub for overseeing
+  your session's taxonomy is the Tag Management dashboard. Because tags are
+  isolated to individual sessions, these settings apply only to the workspace
+  you currently have selected.
+---
+## The Tag Management Modal and Usage List
+
+To access this dashboard, navigate to the main menu and click **⚙ Settings** at the bottom of the sidebar, scroll down to the **Session Settings** section, and click the **"📝 Manage Tags"** button.
+
+When you open Tag Management, you are presented with a comprehensive overview of your session's tags. At the top, quick statistics show you your "Total Tags", how many are "In Use", and how many are "Unused".
+
+Below this is the **Tag List**, which displays every tag registered in the current database. For each tag, the table displays:
+
+- **The Tag Colour:** A visual colour block assigned to the tag.
+
+- **The Tag Name:** The formatted text of the tag (e.g., `#client_meeting`).
+
+- **Usage Count:** A highly useful badge showing exactly how many active tasks are currently associated with this tag (e.g., "5 tasks").
+
+- **Created Date:** When the tag was first added to the system.
+
+- **Actions:** Buttons to edit or delete the tag.
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1772742972766-eahuj7h1f3-Screenshot-2026-03-05-203519.png?q=85&fm=auto&auto=compress%2Cformat" width="1197" height="416" alt="" />
+
+#### Creating New Tags
+
+To add a brand-new tag to your session:
+
+1. Locate the **"➕ Add New Tag"** form near the top of the modal.
+
+2. Type your desired tag name into the input box. *Note: Mind Dump enforces a clean database taxonomy. If you type spaces, they will automatically be replaced with underscores (\_). Special characters will be stripped out, and the text will be forced into lowercase*.
+
+3. Click the colour picker box next to the input to select a specific background colour for the tag badge.
+
+4. Click **"Create Tag"**.
+
+#### Editing Existing Tags
+
+Mind Dump allows you to easily modify a tag after it has been created. These changes will automatically reflect across all tasks currently using that tag.
+
+- **To edit the Tag Name:** Click the **"✏️ Edit"** button next to the tag in the list. This will open a browser prompt where you can type the new name for the tag. Click OK to save the change.
+
+- **To edit the Tag Colour:** Simply click directly on the coloured square preview next to the tag's name in the list. A prompt will ask you to enter a new hex colour code (e.g., `#3b82f6`).
+
+#### Deleting Tags and Usage Restrictions
+
+To keep your system tidy, you can delete tags you no longer need by clicking the **"🗑️ Delete"** button.
+
+**Important Deletion Rule:** You cannot delete a tag if its Usage count is greater than 0. If a tag is actively connected to tasks, the Delete button will be disabled (greyed out) and hovering over it will display the message: *"Cannot delete tag in use"*.
+
+This safety mechanism ensures database integrity and prevents you from accidentally wiping out the categorization of existing records. If you receive an alert saying *"Cannot delete this tag: it is being used by \[X] task(s),"* you must first remove the tag from all associated tasks—which can be done quickly from the main task list using the **Bulk Tag Actions** feature—before the system will allow you to permanently delete the tag definition.
+
+---
+
+## Using Tags: Adding/Removing from Tasks
+
+
+
+
+
+##
+
+---
+
+## Tag Template Management: Saving Complex Searches
+
+As your task list grows, you will frequently need to access complex structures of information by filtering for multiple tags simultaneously. Tag Templates solve this by allowing you to save predefined groups of tags for instant access, rather than having to manually type out multiple tags every time you need to view a specific cross-section of your work.
+
+Because templates are tied to the taxonomy of a specific database, they are configured at the session level. You can access this system by navigating to **⚙ Settings -> Session Settings** and clicking on **Manage Tag Templates**.
+
+#### Managing Tag Templates
+
+Inside the Tag Template Management modal, you have full control over your saved tag groups:
+
+- **Create a new tag template:** Click the "Create New Template" button. You will be prompted to enter a Template Name, an optional Description, and select the specific tags you want to group together using the provided checkboxes,. Once selected, click "Save Template" to store it,.
+
+- **Edit a template:** In your list of templates, click the **✏️ Edit** button next to an existing template. This opens the form and allows you to modify the template's name, its description, or check and uncheck the tags associated with it,.
+
+- **Duplicate a template:** If you want to create a new template that is only slightly different from an existing one, click the **📋 Duplicate** button. This will open a new template form with the exact same tags pre-selected and "(Copy)" appended to the template name, saving you setup time,.
+
+- **Delete a template:** Click the **🗑️ Delete** button to permanently remove a template you no longer need,.
+
+#### Using Quick Templates in Your Workflow
+
+Once your templates are created, you don't need to return to the settings menu to use them.
+
+In the main application sidebar, you will find the **📋 Quick Templates** feature,. By dropping down the list and selecting the required template, Mind Dump automatically takes the group of tags from that template and applies them to your current view,,.
+
+The task list will immediately refresh to show only the matching records. It is important to note that the logical relationship between the tags in a template is a **logical AND**. This means that for a task to be displayed in the filtered list, it must contain *every single tag* that is defined in the template.
+
+When you are finished viewing the filtered records, you can easily clear the list and restore your full task view by clicking the **✕ Clear search** button located near the search bar,,.
