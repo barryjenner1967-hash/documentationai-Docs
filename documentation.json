@@ -44,6 +44,11 @@
                     "title": "View/Edit Task Details",
                     "path": "view/edit-task-details",
                     "icon": "clipboard-edit-icon"
+                  },
+                  {
+                    "title": "Essential Configuration Steps",
+                    "path": "essential-configuration-steps",
+                    "icon": "lucide-table-config"
                   }
                 ]
               }
