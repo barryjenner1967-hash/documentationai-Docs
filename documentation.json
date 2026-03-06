@@ -23,6 +23,11 @@
             "icon": "rocket",
             "pages": [
               {
+                "title": "How to use this manual",
+                "path": "how-to-use-this-manual",
+                "icon": "hand-helping"
+              },
+              {
                 "title": "Introduction",
                 "path": "introduction-1",
                 "icon": "home"
