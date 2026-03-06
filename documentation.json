@@ -54,6 +54,11 @@
                     "title": "Creating & Using Tags",
                     "path": "creating-using-tags",
                     "icon": "alert-octagon"
+                  },
+                  {
+                    "title": "Creating & Editing Task Notes",
+                    "path": "creating-and-editing-task-notes",
+                    "icon": "banknote"
                   }
                 ]
               }

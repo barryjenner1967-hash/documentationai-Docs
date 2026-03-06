@@ -58,11 +58,35 @@ This safety mechanism ensures database integrity and prevents you from accidenta
 
 ## Using Tags: Adding/Removing from Tasks
 
+### Adding Tags to Tasks
 
+There are two primary ways to apply tags to your tasks in Mind Dump.
 
+#### Method 1: The View/Edit Details Modal
 
+The most prominent way to manage a task's categorization is by opening its **View/Edit Details** modal.&#x20;
 
-##
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1772819483206-07fxy7pb2v8t-Screenshot-2026-03-06-175057.png?q=85&fm=auto&auto=compress%2Cformat" width="1005" height="742" alt="" />
+
+Within the modal, locate the dedicated Tags section:
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1772819399735-im9e9aqe4wp-Screenshot-2026-03-06-174917.png?q=85&fm=auto&auto=compress%2Cformat" width="298" height="423" alt="" style="width: 298px; height: auto; cursor: pointer;" />
+
+- **Adding Tags:** Click the **+ Add Tags** button to open the tag selection menu. Here, you can check the boxes next to the tags you wish to apply. If you need a completely new category, you can also create brand-new tags directly from this menu, making taxonomy management highly convenient.
+
+- **Instant Saving:** Any tags you select or deselect in this menu are immediately saved to the database. You do not need to click the main "Save Changes" button at the bottom of the task modal to apply tag updates.
+
+- **Removing Tags:** Once the selection menu is closed, your chosen tags will appear as colored badges inside the modal's Tag box. You can quickly remove a tag from the task by clicking the **×** icon directly on the tag badge itself.
+
+- *Note:* To keep the interface clean and readable, Mind Dump limits you to applying a maximum of 5 tags per individual task.
+
+#### Method 2: The Extended Task Card
+
+The second method for managing tags is by using the Extended Task Card directly from the main list or Kanban board.&#x20;
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1772819550641-iyhw5bcn0rm-Screenshot-2026-03-06-175206.png?q=85&fm=auto&auto=compress%2Cformat" width="876" height="159" alt="" />
+
+While we have not yet covered the Extended Task Card in depth—we will explore this feature shortly—it allows you to quickly add, delete, and create new tags on the fly without ever needing to leave your current task list or open a full details modal.
 
 ---
 
@@ -72,24 +96,33 @@ As your task list grows, you will frequently need to access complex structures o
 
 Because templates are tied to the taxonomy of a specific database, they are configured at the session level. You can access this system by navigating to **⚙ Settings -> Session Settings** and clicking on **Manage Tag Templates**.
 
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1772819797117-r554w6bxmt-Screenshot-2026-03-06-175519.png?q=85&fm=auto&auto=compress%2Cformat" width="1202" height="825" alt="" />
+
 #### Managing Tag Templates
 
 Inside the Tag Template Management modal, you have full control over your saved tag groups:
 
-- **Create a new tag template:** Click the "Create New Template" button. You will be prompted to enter a Template Name, an optional Description, and select the specific tags you want to group together using the provided checkboxes,. Once selected, click "Save Template" to store it,.
+- **Create a new tag template:** Click the "Create New Template" button. You will be prompted to enter a Template Name, an optional Description, and select the specific tags you want to group together using the provided checkboxes,. Once selected, click "Save Template" to store it
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1772819839831-wdjju87pa8m-Screenshot-2026-03-06-175457.png?q=85&fm=auto&auto=compress%2Cformat" width="1215" height="827" alt="" style="width: 1215px; height: auto; cursor: pointer; margin: 0 auto;" />
 
 - **Edit a template:** In your list of templates, click the **✏️ Edit** button next to an existing template. This opens the form and allows you to modify the template's name, its description, or check and uncheck the tags associated with it,.
 
 - **Duplicate a template:** If you want to create a new template that is only slightly different from an existing one, click the **📋 Duplicate** button. This will open a new template form with the exact same tags pre-selected and "(Copy)" appended to the template name, saving you setup time,.
 
-- **Delete a template:** Click the **🗑️ Delete** button to permanently remove a template you no longer need,.
+- **Delete a template:** Click the **🗑️ Delete** button to permanently remove a template you no longer need.
 
 #### Using Quick Templates in Your Workflow
 
 Once your templates are created, you don't need to return to the settings menu to use them.
 
-In the main application sidebar, you will find the **📋 Quick Templates** feature,. By dropping down the list and selecting the required template, Mind Dump automatically takes the group of tags from that template and applies them to your current view,,.
+In the main application sidebar, you will find the **📋 Quick Templates** feature,. By dropping down the list and selecting the required template, Mind Dump automatically takes the group of tags from that template and applies them to your current view.&#x20;
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1772819927609-mmkvpc6jv2-Screenshot-2026-03-06-175809.png?q=85&fm=auto&auto=compress%2Cformat" width="228" height="163" alt="" style="width: 228px; height: auto; cursor: pointer; margin: 0 auto;" />
 
 The task list will immediately refresh to show only the matching records. It is important to note that the logical relationship between the tags in a template is a **logical AND**. This means that for a task to be displayed in the filtered list, it must contain *every single tag* that is defined in the template.
 
-When you are finished viewing the filtered records, you can easily clear the list and restore your full task view by clicking the **✕ Clear search** button located near the search bar,,.
+When you are finished viewing the filtered records, you can easily clear the list and restore your full task view by clicking the **✕ Clear search** button located near the search bar.&#x20;
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1772820551164-nt8nwl4yan-Screenshot-2026-03-06-180839.png?q=85&fm=auto&auto=compress%2Cformat" width="901" height="87" alt="" />
+
