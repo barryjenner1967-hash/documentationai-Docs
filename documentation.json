@@ -36,6 +36,10 @@
                 "group": "Quick Start",
                 "pages": [
                   {
+                    "title": "Basic Searching",
+                    "path": "basic-searching"
+                  },
+                  {
                     "title": "Adding Your First Task",
                     "path": "quick-start-1",
                     "icon": "lucide-sparkle"
