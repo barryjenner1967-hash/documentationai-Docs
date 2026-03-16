@@ -82,21 +82,45 @@ An entry modal will appear in the center of your screen. Because this session ha
 
 ## **Quick Start: AI Task Entry**
 
-Mind Dump features a powerful artificial intelligence system for task entry. While it is capable of processing highly complex inputs and multiple items at once—which we will explore fully later in the documentation—for now, let's look at its most basic operation: adding a single task with a date and an urgency level.
+Mind Dump features a powerful artificial intelligence system for task entry.&#x20;
 
-To add a task using the AI assistant, locate the **'What's on your mind?'** text box just below the Information Bar. When you click into this text box, it will immediately expand to give you more space to see your message.
+When you submit a natural language prompt to the AI Assistant, the backend system automatically analyses your intent and routes your request into one of three distinct operational modes. Understanding these modes will help you frame your requests to get the exact output structure you need:
+
+- **Mode A (Task Extraction):** This mode is triggered by direct commands or actionable requests (e.g., "Buy milk", "Remind me to call the dentist on Friday"). The AI extracts the core action, interprets any mentioned dates or priority keywords, and prepares a standard task for you to approve.
+
+- **Mode B (List Generation):** This mode activates when you explicitly ask the AI to enumerate items (e.g., "List the steps to launch a website", "Name UK Prime Ministers"). Instead of a single task, the system returns a structured checklist, allowing you to select exactly which items you want to convert into individual tasks.
+
+- **Mode C (Generic Content):** This acts as the unlimited fallback mode for informational requests, explanations, or creative generation (e.g., "Write a recipe for lasagna", "Explain quantum physics"). The AI provides a free-form text response. You can then copy this text to your clipboard, save the entire output as a new task, or use the conversational interface to ask follow-up questions.
+
+While it is capable of processing highly complex inputs and multiple items at once—which we will explore fully later in the documentation—for now, let's look at its most basic operation: adding a single task with a date and an urgency level.
+
+**Quick Start: Single Task Generation (Mode A)** The most direct way to use the AI Assistant is for rapid, natural-language task creation. Instead of manually clicking through menus to set dates and priorities, you can simply type your request and let the AI structure it for you.
+
+To add a task using the AI assistant, locate the **'What's on your mind?'** text box just below the Information Bar. When you click into this text box, it will immediately expand to allow you more space to see your message.
 
 For this example, please enter the following into the text box:
 
 *Put the bin out Wednesday urgent*
 
-<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1772265027757-7mpv3noeopv-Screenshot-2026-02-28-074942.png?q=85&fm=auto&auto=compress%2Cformat" width="1397" height="421" alt="" />
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1773677787127-gys2mk6b186-Screenshot-2026-03-16-161546.png?q=85&fm=auto&auto=compress%2Cformat" width="907" height="251" alt="" />
 
 Once entered, click the **'💭 Send to Mind Dump'** button.
 
-**How it Works:** This feature works by sending your input securely to the Claude AI system to extract the exact meaning of your entry. Because the AI is actively analysing your text, the response takes a short while.
+**How it Works:** This feature works by sending your input securely to the Gemini AI system to extract the exact meaning of your entry. Because the AI is actively analysing your text, the response takes a short time.
 
-If the AI interprets the entry as a request for a task, it will automatically add it to your task list, applying the date and urgency information provided in your text. Notice that, in this example, we simply told the AI the task is due on "Wednesday". Mind Dump interprets this query as *next* Wednesday, understanding that actionable tasks are not usually entered for past dates.
+**Approving the Task:** When the approval screen appears, you can often just leave the extracted options exactly as they are. The AI is designed to automatically detect the correct date (the upcoming Wednesday) and the priority (Urgent) from your phrasing.
+
+However, before finalizing, you have full control to alter the extracted details directly in the review table:
+
+- **Task Name:** You can click into the text box to edit the generated name.
+
+- **Task Hierarchy:** By default, it will be created as a Root Task. If you prefer, you can use the dropdown menu to select an existing task, adding this new item as a child (sub-task) instead.
+
+- **Date & Urgency:** You can manually override the AI's interpreted Due Date or Priority Level using the inline selector fields.
+
+Once you are satisfied with the task's structure, simply click the **Approve and Add Tasks** button. The AI-generated task will immediately be saved and added to your main task list.
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1773677941898-cgexj6f91kp-Screenshot-2026-03-16-161829.png?q=85&fm=auto&auto=compress%2Cformat" width="897" height="409" alt="" />
 
 <Callout kind="alert" collapsed="false">
   Important Note: While highly advanced, this process is not infallible. On occasion, the AI might incorrectly select a date. We continue to refine the rules associated with this system, but please always double-check that your dates are correctly assigned.
@@ -105,4 +129,6 @@ If the AI interprets the entry as a request for a task, it will automatically ad
 We now have two task entries in our session. In the next section, we will learn about the task list and how to manage these entries.
 
 <Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1772265063536-b0ca4cckkap-Screenshot-2026-02-28-074857.png?q=85&fm=auto&auto=compress%2Cformat" width="1402" height="930" alt="" />
+
+Here is how you can get started with the most common task creation workflow:
 
