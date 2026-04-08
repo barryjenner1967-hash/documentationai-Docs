@@ -121,6 +121,11 @@
                 "title": "Kanban",
                 "path": "kanban",
                 "icon": "columns3-icon"
+              },
+              {
+                "title": "LaTeX",
+                "path": "latex",
+                "icon": "edit"
               }
             ]
           },
