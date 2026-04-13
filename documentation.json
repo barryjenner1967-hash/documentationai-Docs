@@ -159,6 +159,11 @@
             "icon": "compass",
             "pages": [
               {
+                "title": "Using the Brainstorm Tool",
+                "path": "using-the-brainstorm-tool",
+                "icon": "brain-circuit-icon"
+              },
+              {
                 "title": "Configuration",
                 "path": "configuration",
                 "icon": "settings"
