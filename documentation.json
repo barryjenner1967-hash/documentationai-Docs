@@ -120,7 +120,12 @@
               {
                 "title": "Mind Map",
                 "path": "mind-map",
-                "icon": "lucide-map"
+                "icon": "brain"
+              },
+              {
+                "title": "Brainstorming",
+                "path": "brainstorming",
+                "icon": "brain-circuit"
               },
               {
                 "title": "Kanban",
