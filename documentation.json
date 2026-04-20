@@ -140,6 +140,22 @@
             ]
           },
           {
+            "group": "Guides",
+            "icon": "compass",
+            "pages": [
+              {
+                "title": "Using the Brainstorm Tool",
+                "path": "using-the-brainstorm-tool",
+                "icon": "brain-circuit-icon"
+              },
+              {
+                "title": "Configuration",
+                "path": "configuration",
+                "icon": "settings"
+              }
+            ]
+          },
+          {
             "group": "Legacy",
             "pages": [
               {
@@ -156,22 +172,6 @@
                 "title": "Features",
                 "path": "features",
                 "icon": "file-text"
-              }
-            ]
-          },
-          {
-            "group": "Guides",
-            "icon": "compass",
-            "pages": [
-              {
-                "title": "Using the Brainstorm Tool",
-                "path": "using-the-brainstorm-tool",
-                "icon": "brain-circuit-icon"
-              },
-              {
-                "title": "Configuration",
-                "path": "configuration",
-                "icon": "settings"
               }
             ]
           }
