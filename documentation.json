@@ -36,10 +36,6 @@
                 "group": "Quick Start",
                 "pages": [
                   {
-                    "title": "Basic Searching",
-                    "path": "basic-searching"
-                  },
-                  {
                     "title": "Adding Your First Task",
                     "path": "quick-start-1",
                     "icon": "lucide-sparkle"
@@ -68,6 +64,11 @@
                     "title": "Creating & Editing Task Notes",
                     "path": "creating-and-editing-task-notes",
                     "icon": "banknote"
+                  },
+                  {
+                    "title": "Basic Searching",
+                    "path": "basic-searching",
+                    "icon": "lucide-search"
                   }
                 ]
               }
