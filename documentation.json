@@ -79,6 +79,11 @@
             "icon": "compass",
             "pages": [
               {
+                "title": "Using the Calendar View",
+                "path": "using-the-calendar-view",
+                "icon": "calendar1-icon"
+              },
+              {
                 "title": "Using the Brainstorm Tool",
                 "path": "using-the-brainstorm-tool",
                 "icon": "brain-circuit-icon"
@@ -157,7 +162,8 @@
               {
                 "title": "Quickstart OLD",
                 "path": "quickstart",
-                "icon": "zap"
+                "icon": "zap",
+                "show-sidebar": false
               },
               {
                 "title": "Configuration",
