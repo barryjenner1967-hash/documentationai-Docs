@@ -82,11 +82,6 @@
                 "title": "Using the Brainstorm Tool",
                 "path": "using-the-brainstorm-tool",
                 "icon": "brain-circuit-icon"
-              },
-              {
-                "title": "Configuration",
-                "path": "configuration",
-                "icon": "settings"
               }
             ]
           },
@@ -163,6 +158,11 @@
                 "title": "Quickstart OLD",
                 "path": "quickstart",
                 "icon": "zap"
+              },
+              {
+                "title": "Configuration",
+                "path": "configuration",
+                "icon": "settings"
               },
               {
                 "title": "Creating Your First Task",
