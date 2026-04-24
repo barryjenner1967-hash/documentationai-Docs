@@ -36,6 +36,11 @@
                 "group": "Quick Start",
                 "pages": [
                   {
+                    "title": "How to Create and Configure a Session",
+                    "path": "how-to-create-and-configure-a-session",
+                    "icon": "lucide-table2"
+                  },
+                  {
                     "title": "Adding Your First Task",
                     "path": "quick-start-1",
                     "icon": "lucide-sparkle"
@@ -105,7 +110,7 @@
                 "icon": "database"
               },
               {
-                "title": "Sessions",
+                "title": "Introducing Sessions",
                 "path": "sessions",
                 "icon": "lucide-table2"
               },
