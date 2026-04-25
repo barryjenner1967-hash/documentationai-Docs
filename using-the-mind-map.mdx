@@ -1,0 +1,210 @@
+---
+title: Mind Dump Mind Mapping
+---
+## **Introduction to the Mind Map Feature**
+
+The Mind Map feature in the Mind Dump Task Manager transforms your traditional task lists into a highly interactive, visual workspace. Designed to give you a spatial understanding of your projects, this view allows you to step back and see the big picture while retaining full control over individual task details, priorities, and deadlines. *NOTE: If you are new to Mind Mapping please read the Core Concept document on&#x20;*[*Mind Map*](/mind-map)
+
+**Flexible Layouts and Grouping** You can tailor the structure of your visual canvas to perfectly suit your specific workflow. The mind map supports two primary structural layouts: a central **Bidirectional** map that expands outward, or a top-down **Org Chart** layout. Furthermore, you can dynamically group your nodes based on your current needs, such as organising by **Due Dates**, sorting by **Custom Fields**, or viewing them strictly as an **Ungrouped Hierarchy**.
+
+**Intuitive Drag-and-Drop Organization** Organising your tasks visually is as simple as clicking and dragging. You can grab task nodes to freely reposition them, create new subtasks, or drop them directly into different date categories and priority groups to instantly update their underlying data.
+
+**Custom Relationships and Text Boxes** Beyond standard parent-child task hierarchies, the Mind Map allows you to draw **custom links** between any two items on the canvas. These arbitrary links can be labeled with specific relationships such as "Relates to," "Depends on," or "Blocks," complete with directional arrows. To further enrich your map, you can add independent **Free Text Boxes** anywhere on the canvas. These text boxes can serve as standalone floating notes, be converted into large icon-only markers, or be linked directly to your tasks to provide extra context.
+
+**Deep Visual Customization** Mind Dump allows you to personalise your workspace heavily. You can customise the **Canvas Background Color**, apply distinct **Branch Colors** to differentiate project streams, and individually format the text and background colours of your floating text boxes. You can also adjust the physical geometry of your map by selecting between **Curved, Straight, or Elbow** branch styles, and manually tweaking the curve tension and vertical separation of the connections.
+
+**Navigation, Filtering, and Exporting** Navigating large and complex projects is made easy with an infinite, zoomable canvas and a dedicated **Mini-map** that highlights your current viewport. When you need to drill down into specific data, you can utilise the powerful **filtering system** to search by keyword, isolate tasks by urgency (Urgent, Normal, Low), filter by date ranges, or create compound custom filter rules. Once your mind map is perfectly organised, you can easily share your work by exporting the canvas to a **PDF** document or copying the structure as an **OPML** outline.
+
+## **Understanding Session Modes: Date-Centric vs. Alphabetical Mind Maps**
+
+Mind Dump’s Mind Map view is highly dynamic, automatically adapting its structural layout, user interface, and interactive behaviours based on the underlying nature of your session (its "sort mode"). The app divides sessions into two primary categories: **Date-centric** and **Alphabetical** (often referred to as Alpha, Knowledge Base, or Outline sessions).
+
+Here is a breakdown of the basic differences and why these two modes exist:
+
+**Date-Centric Session Mind Maps** **Why it exists:** This mode is engineered for strict task execution, time management, and triage. It is designed to answer the question, "What do I need to do next?"
+
+- **Time-Based Structure:** By default, the mind map organises your data by **Due Dates**. The primary branches extending from your central session node are fixed time categories, such as "Overdue," "Due Today," "This Week," "This Month," and "Later".
+
+- **Urgency Sub-grouping:** Within those specific date branches, tasks are automatically subdivided into priority groups: **Urgent, Normal, and Not Urgent**.
+
+- **Tailored Interface:** Because time and priorities dictate the structure, the UI displays a colour-coded legend for your deadlines and provides a specific toggle to turn priority grouping on or off.
+
+**Alphabetical (Alpha/Hierarchy) Session Mind Maps** **Why it exists:** This mode is built for knowledge management, outlining, and brainstorming. It strips away time-based constraints to let you build a free-form knowledge graph where the logical, parent-child relationships between items are the only things that matter.
+
+- **Pure Hierarchical Structure:** In Alpha mode, tasks are not forced into date or urgency buckets. Instead, your primary "root tasks" connect directly to the central session node, forming a pure structural hierarchy.
+
+- **Streamlined Interface:** Because due dates and urgency levels do not dictate the layout, the date-grouping dropdown option, the priority grouping toggle, and the time-based legend are completely hidden from the interface.
+
+- **Spatial Reordering:** Alpha mode unlocks a drag-and-drop capability called **Root Task Repositioning**. You can drag primary branches and drop them into specific "insertion gaps" to permanently reorder your visual layout on the canvas.
+
+- **Performance Scaling:** Because Alpha sessions allow for an unconstrained, free-form canvas, they can become visually complex. If you attempt to load an Alpha session with more than 30 primary parent tasks, the app will present a warning, as rendering massive free-form maps can become unwieldy and impact browser performance.
+
+**In Summary:** The core difference lies in **how the canvas controls your data**. Date-centric maps impose a rigid, automated framework (Time -> Priority) to help you manage a schedule. Alphabetical maps remove those constraints, giving you the freedom to manually build, order, and structure complex trees of information.
+
+## **The Central Node: Your Mind Map's Foundation**
+
+The central node—prominently displaying your session or project name—acts as the foundational anchor for your entire workspace. Everything you map out will branch outward or downward from this singular origin point.
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1777099583767-m8cqyxuejw-Screenshot-2026-04-25-074548.png?fm=auto&auto=compress%2Cformat" width="358" height="321" alt="" caption="The central node on an already populated Mind Map" style="width: 358px; height: auto; cursor: pointer; margin: 0 auto;" />
+
+**Starting Your Mind Map**
+
+To begin building your mind map, you need to create your first "root tasks"—the primary branches that connect directly to the central node. Mind Dump offers two seamless ways to initiate this from the central node:
+
+- **Using the Mouse:** Locate the small, green circular **"+" (plus) button** positioned directly next to the central node. Clicking this button will immediately open the task creation form.
+
+- **Using the Keyboard:** Click directly on the central node to select it. Once selected, press the **Tab** key on your keyboard to instantly trigger the task creation form.
+
+**Configuring Your New Branch**
+
+Once you trigger the creation process, an inline form titled "Create New Task" will appear on your canvas. Here is how to configure your first node:
+
+**Task Name:** Enter the name of your task or category in the provided text input field. Note that the task name cannot be left empty.
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1777099889885-ws5udeha1pk-Screenshot-2026-04-25-075058.png?fm=auto&auto=compress%2Cformat" width="476" height="266" alt="" caption="Adding a new root task to an Alphabetical Session" style="width: 476px; height: auto; cursor: pointer; margin: 0 auto;" />
+
+- **Due Date (if applicable):** If you are working in a date-centric session, the form will reveal a date picker. You can use the quick-action buttons to instantly assign the task to **Today**, **Tomorrow**, **Next Week**, or designate it as having **No Date**. Alternatively, use the calendar input to pick a custom date.
+
+**Priority:** You can assign an immediate priority level to your new branch, selecting between **Urgent**, **Normal**, or **Low** (Not Urgent).
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1777099982650-4zkpr9cwkoj-Screenshot-2026-04-25-075246.png?fm=auto&auto=compress%2Cformat" width="486" height="397" alt="" caption="Adding a new task in a Datecentric Session" style="width: 486px; height: auto; cursor: pointer; margin: 0 auto;" />
+
+**Completing the Creation**
+
+To finalise your new branch, simply hit the **Enter** key on your keyboard or click the **Create** button at the bottom of the form.
+
+Your new task will be instantly rendered on the canvas, connected directly to the central node. To build out the rest of your primary structure, simply return to the central node and repeat this process.
+
+## **Expanding Your Mind Map: Creating Child and Sibling Tasks**
+
+Once you have established your primary branches from the central node, you can continuously expand your mind map by adding new tasks directly to existing ones. Mind Dump categorises these additions into two types: **Child tasks** (subtasks nested under the current task) and **Sibling tasks** (parallel tasks at the same hierarchical level).
+
+You can rapidly build out your tree using either keyboard shortcuts or mouse interactions.
+
+**Using Keyboard Shortcuts (Recommended for Speed)** For the fastest data entry, you can use keyboard shortcuts to build your map without lifting your hands from the keys. First, select an existing task by clicking on it. Once the node is selected, use the following keys:
+
+- **Create a Child Task (**`Tab`**):** Pressing the **Tab** key will instantly open the inline task creation form, automatically configuring the new task as a subtask of the currently selected node.
+
+- **Create a Sibling Task (**`Enter`**):** Pressing the **Enter** key will open the inline form to create a new task at the exact same hierarchical level as your currently selected task.
+
+**Using Mouse Actions and Quick Action Buttons** If you prefer navigating with your mouse, you can use the built-in Quick Action buttons.
+
+**Revealing the Buttons:** To access these controls, simply **right-click** on any existing task node.
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1777102824793-udbjgzl6d9l-Screenshot-2026-04-25-083956.png?fm=auto&auto=compress%2Cformat" width="291" height="151" alt="" caption="Right click a node to reveal the add child and sibling + icons" style="width: 291px; height: auto; cursor: pointer; margin: 0 auto;" />
+
+- **Adding the Tasks:** Right-clicking will pin the task's hover menu and reveal interactive **"+" (plus) marks** directly around the node.
+
+  - Click the **"+" mark positioned at the end of the node** (to the left or right, depending on the branch's direction) to add a **Child** task.
+
+  - Click the **"+" mark positioned directly below the node** to add a **Sibling** task.
+
+Whether you use the keyboard or the mouse, triggering these actions will bring up the standard "Create New Task" form, allowing you to instantly type the task name, adjust its due date, and set its priority before it renders on the canvas.
+
+## **Navigating the Mind Map via Keyboard**
+
+While Mind Dump offers intuitive mouse controls, power users can navigate and build their mind maps entirely using the keyboard. This allows for rapid traversal and data entry without ever reaching for the mouse.
+
+**Initialising Keyboard Navigation** To begin navigating with your keyboard, you must first set a starting point. Simply **single-click** on any node (a task, category, or the central node) on the canvas. A highlight outline will appear around the node to indicate it is currently selected and active for keyboard navigation.
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1777102724622-kupuj3xt62-Screenshot-2026-04-25-083824.png?fm=auto&auto=compress%2Cformat" width="233" height="76" alt="" caption="A selected node has a red border" style="width: 233px; height: auto; cursor: pointer; margin: 0 auto;" />
+
+**Horizontal Movement (Left and Right Arrows)** The **Left Arrow** and **Right Arrow** keys allow you to traverse inward toward the central node or outward deeper into your branches:
+
+- **Moving Outward:** If you are on the right side of the mind map, pressing the Right arrow moves you deeper into the child nodes of that branch until there are no further nodes. If you are on the left side, the Left arrow accomplishes this same outward movement.
+
+- **Moving Inward:** Conversely, pressing the Left arrow while on the right side of the map will move you backward to the parent node. Continuing to press it will eventually land you on the Central Node.
+
+**Vertical Movement (Up and Down Arrows)** The **Up Arrow** and **Down Arrow** keys allow you to navigate vertically between sibling nodes that share the same parent and exist on the exact same hierarchical level. You can cycle up and down through these parallel lists of tasks or categories seamlessly.
+
+**Crossing the Central Node** When your inward navigation brings you back to the Central Node, you can easily cross over to the opposite side of your mind map. If the Central Node is selected and you press the Left or Right arrow key, Mind Dump will automatically navigate to the **uppermost** root task or category on that respective side. This intentionally places your selection at the very top of that side's list, ready for you to navigate downward through the branches.
+
+**Rapidly Creating New Nodes** Keyboard navigation pairs perfectly with Mind Dump's rapid task creation shortcuts. Once you have navigated to your desired node using the arrow keys, you can instantly expand the map:
+
+- Press **Enter** to create a **Sibling task** directly below your currently selected node.
+
+- Press **Tab** to create a **Child task** branching outward from your currently selected node.
+
+## **Renaming a Node**
+
+To change the name of an existing task directly on your mind map, you can use the inline editing feature.
+
+**Step-by-Step Instructions:**
+
+1. **Select the Node:** Start by clicking once on the node you want to rename, which will highlight it as your active selection.
+
+2. **Click Again:** After a brief pause, single-click the same node a second time. *Note: The brief pause is important. If you perform a rapid double-click, the app will interpret that as a command to expand or collapse the node's branches rather than an instruction to edit the text*.
+
+3. **Make Your Edit:** The node will instantly transform into an editable text field, allowing you to type out the new name
+
+   <Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1777102613402-lq8dy3jwnih-Screenshot-2026-04-25-081230.png?fm=auto&auto=compress%2Cformat" width="677" height="162" alt="" caption="Changing a name inline in a node" />
+
+
+
+4. **Commit the Change:** Once you are satisfied with your edits, simply press the **Enter** key on your keyboard to save the changes. Alternatively, clicking anywhere else on the mind map canvas will also commit the save. If you change your mind while editing, pressing the **Escape** key will cancel the process and revert the node to its original name.
+
+**System-Wide Updates** Because the Mind Map view is directly integrated with your core data, renaming a node immediately updates the underlying task record in your database. This means that the new task name will instantly be reflected across all other views and features throughout the Mind Dump application.
+
+## **Accessing the Node Menu**
+
+To access the full suite of actions for a specific task, simply **right-click** on the node. This action will pin the node's menu (or hover card) to the screen, revealing several powerful options to manage your task.
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1777101444860-hp7surbosdh-Screenshot-2026-04-25-081648.png?fm=auto&auto=compress%2Cformat" width="907" height="251" alt="" />
+
+Here is a brief breakdown of the purpose of each menu item:
+
+- **Edit:** Opens the Universal Task Edit dialogue, where you can modify any details and properties about the task.
+
+- **Notes:** Opens the notes viewer, allowing you to read or edit text notes associated with the task.
+
+- **Sub-task:** Instantly adds a new child task, branching off from the selected node. This is the same action as using the Tab key or clicking the child + mark on a node.&#x20;
+
+- **Link:** Initiates the creation of a custom link line to visually connect this node to another node on your canvas.
+
+- **Focus:** Changes the view of the mind map to focus exclusively on that single node, displaying only it and its children extending from the central node.
+
+- **Complete:** Marks the task as finished. *Note: The complete option is only available when viewing a Date-centric mind map.*
+
+- **Icon:** Opens an icon picker, allowing you to add a single visual icon to the node.
+
+- **Colour:** This opens the branch colour picker to apply a custom colour to the selected node, which will automatically cascade down to its children.
+
+- **Delete:** Removes the node and its associated task from the database. Note that this option is purposefully disabled and unavailable if the node currently has existing children (sub-tasks).
+
+Once you are finished, you can close the menu by simply **clicking anywhere else on the canvas** away from the menu.
+
+## **Enhancing Your Mind Map with Icons**
+
+Icons serve as powerful visual indicators in your mind map, allowing you to instantly identify task types, priorities, or specific context (such as distinguishing a "meeting" from a "bug" or a "document") without needing to read the task text.
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1777102528497-zmwyskb2bp-Screenshot-2026-04-25-083509.png?fm=auto&auto=compress%2Cformat" width="284" height="158" alt="" caption="Example Bug Icon" style="width: 284px; height: auto; cursor: pointer; margin: 0 auto;" />
+
+**How to Add an Icon to a Node** To assign an icon to a specific task node, you can use either the mouse or a keyboard shortcut:
+
+- **Using the Mouse:** Right-click the desired node to open its context menu, then select the **Icon** option.
+
+- **Using the Keyboard:** Select the node by clicking it once, then press **Cmd+I** (Mac) or **Alt+I** (Windows) to instantly open the Icon Picker.
+
+<Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1777102422172-3au02dh1idz-Screenshot-2026-04-25-083202.png?fm=auto&auto=compress%2Cformat" width="907" height="1169" alt="" caption="The icon picker showing icons already used on the current mind map" style="width: 907px; height: auto; cursor: pointer; margin: 0 auto;" />
+
+**Icon Attachment and Movement** Once you apply an icon to a node, it is rendered directly into the visual structure of that node, positioned just above it. Because the icon is mathematically anchored to the node's central coordinates, it acts as a permanent extension of the node itself. Whether the node is shifted by the automatic layout engine, dragged to a new branch, or moved alongside its parent, the attached icon will perfectly follow the node's movements and scale with it when zooming.
+
+**Icon Categories and Searching:** Triggering the icon selection opens the **Icon Picker Modal**, which provides access to an extensive library of Tabler Icons. To help you find the perfect visual representation, the picker is divided into two main navigation methods:
+
+- **Categories:** At the top of the modal, you will find a scrollable list of category tabs. It defaults to a "Popular" category, but you can click through various dynamic categories to browse themed grids of icons.
+
+- **Search Box:** If you know exactly what you are looking for, you can use the search bar located at the top of the picker. As you type a keyword (e.g., "star" or "alert"), the modal will query the database and generate a dedicated "Search Results" tab displaying all matching icons.
+
+**Reusing Icons: The "Already Used" Category**
+
+To help you maintain a consistent visual language across your complex projects, the Icon Picker includes a dynamic category dedicated entirely to reuse.
+
+- **Finding Used Icons:** When you open the Icon Picker Modal, the very first category tab displayed in the scrollable list is dedicated to the icons already active on your map.
+
+- **How it Works:** This tab functions exactly like the standard dynamic categories. Selecting it will generate a grid displaying every unique icon currently attached to a node somewhere in your workspace. This allows you to quickly grab and apply project-specific icons without needing to remember their exact names or search the broader library again.
+
+- **Empty State:** Because this category dynamically reads your current canvas, the grid will simply appear empty if you open the Icon Picker on a brand-new mind map or one where no icons have been applied yet.
+
+**Selecting and Saving an Icon** Once you locate your preferred icon in the grid, simply click on it. The chosen icon will become highlighted to indicate your selection. To finalise the addition and apply the icon to your mind map node, click the **Save** button located at the bottom of the modal.
+
+**Removing an Icon** If you decide you no longer want an icon attached to a node, open the Icon Picker Modal for that specific node again. Instead of selecting a new icon, click the **Clear Icon** button at the bottom of the modal. This will immediately remove the icon from the node and update your database.

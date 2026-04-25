@@ -89,6 +89,11 @@
                 "icon": "calendar1-icon"
               },
               {
+                "title": "Using The Mind Map",
+                "path": "using-the-mind-map",
+                "icon": "brain-icon"
+              },
+              {
                 "title": "Using the Brainstorm Tool",
                 "path": "using-the-brainstorm-tool",
                 "icon": "brain-circuit-icon"

@@ -15,33 +15,39 @@ The **Mind Dump calendar view** is designed specifically to bridge the gap betwe
 
 - **Direct Task Management:** You never have to leave the calendar view to access or update task information. Every task card gives you direct access to details, meta badges, and tags. Through the edit modal, you can update properties, change time estimates, or add notes. You can also complete tasks right from the calendar using dedicated completion buttons; once finished, the system visually crosses them out so you can see your progress at a glance.
 
-## **Navigating the Main Calendar Page: The Day View**
+## Navigating the Main Calendar Page: The Day View
 
 When you open the calendar feature, the interface defaults to the Day View, which acts as your central command hub for daily planning. The screen is designed with a clear, split-screen layout: your daily schedule on the left and your unscheduled tasks on the right.
 
-**The Calendar Navigation Bar.** Running along the top of the screen is the calendar navigation bar, which provides all the controls you need to manage your calendar views and data.
+**The Calendar Navigation Bar** Running along the top of the screen is the calendar navigation bar, which provides all the controls you need to manage your calendar views and data.
 
-- **Navigation Controls:** Use the **"\< Prev"**, **"Today"**, and **"Next >"** buttons to quickly jump between dates and find the day you want to plan.
+- **Navigation Controls:** Use the "\< Prev", "Today", and "Next >" buttons to quickly jump between dates and find the day you want to plan.
 
-- **View Switcher:** While this guide focuses on the Day View, you can use the buttons on the far right to switch your perspective to a broader **Week, Month, or Year view**.
+- **View Switcher:** While this guide focuses on the Day View, you can use the buttons on the far right to switch your perspective to a broader Week, Month, or Year view.
 
 - **Date Display:** A central display clearly shows the current date or month you are viewing.
 
-- **App Actions:** The **"Back to Mind Dump"** button returns you to the main app interface, while the **"Fetch Calendars"** button manually triggers a sync to pull in your external diary events. There are also options to **Print** your day or week if you prefer a physical copy.
+- **App Actions:** The "Back to Mind Dump" button returns you to the main app interface, while the "Fetch Calendars" button manually triggers a sync to pull in your external diary events. There are also options to Print your day or week if you prefer a physical copy.
 
-**Your Day Schedule (Left Side)** The left half of the screen is dedicated to your actual daily schedule.
+**Your Day Schedule (Left Side)** The left half of the screen is dedicated to your actual daily schedule. This section features a vertically scrollable grid broken down into hourly slots.
 
-- This section features a vertically scrollable grid broken down into **hourly slots**.
+To optimize your planning space, **the calendar uses a dynamic height system for these hourly rows**.
 
-- Throughout the day, your imported appointments and meetings are displayed as distinct blocks within these specific hourly rows.
+- **Prominent Hours (Expanded Height):** The most active parts of your day are displayed with expanded, taller cells, giving you plenty of room to arrange complex schedules and easily view your events.
 
-- To keep you orientated, the app uses a special highlight and a "Now" indicator to visually mark the current hour of the day. External diary events that have been synced in will appear as read-only blocks with dashed borders, allowing you to clearly see where your existing commitments lie.
+- **Off-Peak Hours (Compact Height):** Hours outside of your core day are compressed into compact, shorter rows to save valuable screen space and reduce the need for excessive scrolling.
 
-**Task Grouping Sidebar (Right Side)** The right half of the screen houses your task list in a dedicated, scrollable sidebar. To prevent your 15-plus tasks from looking like an overwhelming wall of text, the app intelligently sorts them into **collapsable task buckets**.
+- **Display Start Hour:** To save you even more time, the calendar features an intelligent auto-scroll mechanism. When you load the Day View, the grid will naturally start at your designated "Display Start Hour," placing you exactly where your day begins rather than forcing you to manually scroll past midnight.
 
-- **Intuitive Categories:** Your tasks are automatically sorted into helpful groups based on their deadlines, including: **Overdue, Due today, Due tomorrow, This week, This month, Later, No due date**, and **Scheduled Tasks**.
+*(Note: You can easily customize the exact start and end times for your expanded prominent hours, adjust the precise cell heights, and set your preferred default display start hour in the&#x20;****Settings -> User Preferences****&#x20;section.)*
 
-- **Expand and Collapse Feature:** To keep your workspace tidy, each of these groups functions as an accordion menu. The header for each group displays its name, an icon, and a count of how many tasks it contains. You can click the header to **expand or collapse** the list of tasks inside.
+Throughout the day, your imported appointments and meetings are displayed as distinct blocks within these specific hourly rows. To keep you orientated, the app uses a special highlight and a "Now" indicator to visually mark the current hour of the day. External diary events that have been synced in will appear as read-only blocks with dashed borders, allowing you to clearly see where your existing commitments lie.
+
+**Task Grouping Sidebar (Right Side)** The right half of the screen houses your task list in a dedicated, scrollable sidebar. To prevent your 15-plus tasks from looking like an overwhelming wall of text, the app intelligently sorts them into collapsable task buckets.
+
+- **Intuitive Categories:** Your tasks are automatically sorted into helpful groups based on their deadlines, including: Overdue, Due today, Due tomorrow, This week, This month, Later, No due date, and Scheduled Tasks.
+
+- **Expand and Collapse Feature:** To keep your workspace tidy, each of these groups functions as an accordion menu. The header for each group displays its name, an icon, and a count of how many tasks it contains. You can click the header to expand or collapse the list of tasks inside.
 
 - **Colour Coding:** Each group features subtle colour coding to help you prioritise at a glance—for example, the "Overdue" bucket is tinted red, while "Scheduled" tasks are green.
 
@@ -62,6 +68,9 @@ Here is how you can use the Hour View to fine-tune your day:
 - **Precision Drag-and-Drop Scheduling:** Just like in the main Day View, you can drag tasks from your right-hand sidebar directly onto this precision window. As you hover over the expanded hour, a precision drop overlay and visual guides will appear, complete with markers to help you snap your task perfectly into place within those 5-minute increments. You will also see a visual "ghost" element following your cursor to provide immediate feedback on where the task will drop.
 
 - **Dynamic Realigning:** If you are dragging a task and realise you need to place it earlier or later than your currently focused hour, simply **drag the task up or down into the faded 30-minute context areas**. Doing so will dynamically shift and realign the Hour View to focus on the newly targeted hour.
+
+- **Manual Hour Navigation:** You can easily step forward or backward through your schedule without needing to exit the precision view. Simply click the previous (◀) or next (▶) arrow buttons located in the calendar's header bar to shift your focus to the adjacent hour. For even faster navigation, you can use your keyboard's arrow keys—press the **Up** or **Left** arrow to move back an hour, and the **Down** or **Right** arrow to move ahead\
+
 
 This combination of micro-scheduling and fluid navigation ensures that even your busiest, most tightly packed hours can be structured effortlessly.
 
@@ -168,4 +177,46 @@ However, Mind Dump is designed to keep you accountable. If the scheduled end dat
 - **Editing Titles and Dates:** You can manually change the title and the start/end dates directly in this dialogue. *Crucially, these changes apply only to the calendar event instance, not the actual Mind Dump task.* This allows you to rename an event to something like "Prep for Meeting" without altering the master task name in your database.
 
 - **Mark as Busy Time:** You will also see an option to mark the event as "Busy Time." By default, tasks can be visually set to "free" (which styles them with a lighter, italicised appearance), but marking them as busy ensures that this block of time is treated as a hard commitment on your schedule, helping you protect your time.
+
+## Calendar Keyboard Shortcuts
+
+The Mind Dump Calendar includes several keyboard shortcuts to help you quickly navigate between different views and manage your schedule.
+
+**Important Note:** To prevent accidental navigation while typing, all calendar shortcuts are automatically disabled if you have a modal open (such as the Edit Task modal) or if your cursor is currently active inside a text input, text area, or dropdown menu.
+
+#### **View Switching Shortcuts**
+
+You can rapidly switch between different calendar perspectives using the **Alt** key (or **Option** key on a Mac) combined with a letter.
+
+- **Alt + D**: Switch to the **Day** view.
+
+- **Alt + W**: Switch to the **Week** view.
+
+- **Alt + M**: Switch to the **Month** view.
+
+- **Alt + Y**: Switch to the **Year** view.
+
+- **Alt + H**: Toggle the **Hour Focus** view on and off. *Note: This shortcut only works if you are already in the Day view.*
+
+#### **Hour Focus Navigation**
+
+When you have the **Hour Focus** view enabled, you can use your keyboard's arrow keys to quickly shift your schedule forward or backward.
+
+- **Up Arrow (↑)** or **Left Arrow (←)**: Shift the focus window to the previous hour.
+
+- **Down Arrow (↓)** or **Right Arrow (→)**: Shift the focus window to the next hour.
+
+#### **General Shortcuts**
+
+- **Escape (Esc)**: The Escape key can be used to quickly close the "month overflow" popover (which appears when you click to view additional hidden events on a single day in the Month view). It can also be used to cancel out of the "Set due date" bucket modal or cancel out of editing a task name in the simple modal.
+
+## Adding a New Task from the Calendar
+
+While organising your schedule, you might realise you need to create a new action item. You can do this entirely without leaving the calendar interface.
+
+- **The Add Task Button:** Located at the top of the scrollable Task Grouping Sidebar on the right side of the screen, you will find a dedicated "+ Add Task" button.
+
+- **Smart Date Pre-filling:** Clicking this button opens the standard task creation modal over your calendar. To streamline your workflow and save you time, the calendar intelligently pre-fills the new task's "Due Date" to perfectly match the specific date you are currently viewing on the calendar.
+
+- **Instant Updates:** Once you finish creating the task and hit save, the calendar automatically fetches the latest data and refreshes the view. Your newly created task will instantly appear in the appropriate task bucket (such as "Due today" or "Due tomorrow") in your sidebar, ready for you to drag and drop into your daily schedule.
 
