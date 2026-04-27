@@ -53,7 +53,7 @@ As your mind map grows, you will need to move around the workspace. Mind Dump of
 
 Whenever you start panning or zooming, any open task menus or quick action buttons will automatically close so they do not obstruct your view.
 
-**On-Screen Zoom Controls** If you prefer clicking to navigate, you can use the dedicated zoom control panel pinned to the **bottom right corner** of the mind map.
+**On-Screen Zoom Controls** If you prefer clicking to navigate, you can use the dedicated zoom control panel pinned to the **bottom-right corner** of the mind map.
 
 - Click the **"+" (plus)** button to step your zoom inward.
 
@@ -61,9 +61,23 @@ Whenever you start panning or zooming, any open task menus or quick action butto
 
 **Centralising the Map** When working with complex projects, it is easy to lose your place on the infinite canvas. Mind Dump provides two dedicated tools to instantly bring your entire project back into view:
 
-- **Centre & Zoom (Top Menu):** Located in the main input menu at the top of the screen, the **Centre & Zoom** button calculates the physical boundaries of your entire mind map structure. Clicking it will instantly center the camera on the exact middle of your map and adjust the zoom level so that all content fits on the screen.
+- **Centre & Zoom (Top Menu):** Located in the main input menu at the top of the screen, the **Centre & Zoom** button calculates the physical boundaries of your entire mind map structure. Clicking it will instantly centre the camera on the exact middle of your map and adjust the zoom level so that all content fits on the screen.
 
-- **Zoom to Fit (Bottom Right Controls):** Located next to the plus and minus buttons in the bottom right corner, you will find the **Zoom to fit** button (represented by a **⊡** square icon). Clicking this button calculates the boundaries of all *currently visible* nodes—smartly ignoring any nodes that are currently hidden or dimmed by your active search filters. It then performs a smooth, sweeping camera transition to perfectly frame and center your visible tasks within the window, leaving a comfortable padding around the edges.
+- **Zoom to Fit (Bottom Right Controls):** Located next to the plus and minus buttons in the bottom right corner, you will find the **Zoom to Fit** button (represented by a **⊡** square icon). Clicking this button calculates the boundaries of all *currently visible* nodes—smartly ignoring any nodes that are currently hidden or dimmed by your active search filters. It then performs a smooth, sweeping camera transition to perfectly frame and centre your visible tasks within the window, leaving a comfortable padding around the edges.
+
+## Mind Map Canvas Colour
+
+To change the background colour of your mind map canvas, follow these steps:
+
+1. **Right-click on an empty area** of the canvas, ensuring you do not click directly on a task node or text box.
+
+2. Select **"Change Canvas Colour"** from the context menu. This will open the modal for the canvas background colour.
+
+3. Choose your preferred background colour by using the visual **colour picker** input, entering a specific **Hex Code**, or selecting from a grid of your **recently used colours.**
+
+4. Click **'Save Colour'** to apply the new background to your workspace.
+
+If you ever want to reset the canvas to its default white background, you can open this same modal and click the **'Clear Colour'** button.
 
 ## **The Central Node: Your Mind Map's Foundation**
 
@@ -113,11 +127,11 @@ You can rapidly build out your tree using either keyboard shortcuts or mouse int
 
 **Using Mouse Actions and Quick Action Buttons** If you prefer navigating with your mouse, you can use the built-in Quick Action buttons.
 
-**Revealing the Buttons:** To access these controls, simply **right-click** on any existing task node.
+**Revealing the Buttons:** To access these controls, simply click on any existing task node.
 
 <Image src="https://blob-cdn.documentation.ai/org-345aafe0-d05f-4ea0-a0d8-da85a24de9e7/doc-2dc7c9b9-c923-475b-b613-93f57e86164f/1777102824793-udbjgzl6d9l-Screenshot-2026-04-25-083956.png?fm=auto&auto=compress%2Cformat" width="291" height="151" alt="" caption="Right click a node to reveal the add child and sibling + icons" style="width: 291px; height: auto; cursor: pointer; margin: 0 auto;" />
 
-- **Adding the Tasks:** Right-clicking will pin the task's hover menu and reveal interactive **"+" (plus) marks** directly around the node.
+- **Adding the Tasks:** Clicking will reveal interactive **"+" (plus) marks** directly around the node.
 
   - Click the **"+" mark positioned at the end of the node** (to the left or right, depending on the branch's direction) to add a **Child** task.
 
@@ -235,7 +249,7 @@ To help you maintain a consistent visual language across your complex projects, 
 
 Adding colours to your mind map is an excellent way to visually organise your workspace. Applying specific colours helps you instantly differentiate between different project streams, categories, or branches. Mind Dump also automatically adjusts the text colour (to dark or light) based on your chosen background to ensure perfect readability.
 
-**Using the colour picker** To change a node's colour, right-click the node to open its context menu (or hover card) and click the **Colour** button. This opens the branch colour picker, which offers a few ways to select your perfect shade:
+**Using the colour picker** To change a node's colour, right-click the node to open its context menu (or hover card) and click the **'Colour'** button. This opens the branch colour picker, which offers a few ways to select your perfect shade:
 
 - **Colour Square / Colour Picker:** Click the colour picker input to open your system's visual colour square, allowing you to manually blend and select any custom colour.
 
@@ -247,10 +261,207 @@ Adding colours to your mind map is an excellent way to visually organise your wo
 
 However, you retain full control over downstream items. If you select a child task deeper in the branch and assign it a *new* colour, that task will adopt the new colour. Furthermore, this new colour will now cascade down to its own children, effectively overriding the original parent's colour for that specific sub-branch.
 
-**Removing Colours:** If you want to revert a node back to its default styling, open the Colour Picker and click **Clear Colour**. If you are clearing a parent or group node, you can also use the **Clear Branch Colours** button, which will not only remove the colour from the selected node but will also **cascade the colour removal** down through all of its descendant nodes and nested groups.
+**Removing Colours:** If you want to revert a node back to its default styling, open the Colour Picker and click **'Clear Colour'.** If you are clearing a parent or group node, you can also use the **Clear Branch Colours** button, which will not only remove the colour from the selected node but will also **cascade the colour removal** down through all of its descendant nodes and nested groups.
 
 **Coloring in Date-Centric Maps** While Alphabetical maps allow complete free-form colouring, Date-centric maps handle colours a bit differently at the top level to help you distinguish your schedule.
 
 In Date-centric maps, the static priority (urgency) groups automatically generate their colours based on the parent Date group. Instead of requiring you to manually colour each priority level, the system automatically **rotates the colour hue** to provide clear visual differentiation. For example, the "Urgent" group shifts the parent date's colour hue by 90 degrees, while the "Not Urgent" group shifts it by 270 degrees.
 
 Despite this automated grouping at the top, **you can still manually colour any individual task node** within those groups. If you apply a colour directly to a task inside a date or urgency group, that custom colour will take priority and override the automated grouping colours.
+
+## **Linking Nodes in Your Mind Map**
+
+While the primary structure of your mind map is defined by automatic parent-child hierarchies or date-centric groupings, you will often find that tasks across completely different branches are related. **Link lines** allow you to draw custom, arbitrary connections between any two items on your canvas (including tasks and text boxes) to visually represent these cross-project dependencies.
+
+**Creating a Link Line** To establish a new connection between two nodes:
+
+1. **Right-click** on your starting task or text box to open its context menu.
+
+2. Select the **Link** (or **Add Link**) option. Your interface will enter link creation mode, and a status indicator will appear at the top of your screen.
+
+3. **Click on your target** task or text box.
+
+4. A dialogue will immediately appear asking you to specify the **Link Type** to define the relationship between the two items.
+
+**Link Types and Their Meanings** When creating a link, you must choose a relationship type. Each type uses a distinct visual language to help you quickly read the map:
+
+- **Relates to:** A standard connection indicating the tasks are associated. Rendered as a **blue/purple dashed line**.
+
+- **Depends on:** Indicates the source task relies on the target task. Rendered as an **amber/orange dotted line**.
+
+- **Blocks:** Indicates the source task is actively preventing the target task from progressing. Rendered as a **thick, red line with longer dashes**.
+
+**Editing Link Text and Comments** Links can carry their own descriptive labels and extended notes. To edit these, **right-click directly on the link line** to open its specific context menu and select **Edit Link Text**.
+
+- **Label (Title):** This text is rendered directly onto the link line on your canvas (up to 255 characters). If left empty, the system defaults to displaying the link type in uppercase (e.g., "RELATES TO").
+
+- **Comment:** This is a hidden text area for your personal notes regarding the dependency.
+
+- **Hover Tooltips:** To view a link's comment without opening the editor, simply hover your mouse over the link line. A tooltip will appear displaying the label and the full comment text.
+
+**Formatting Label Text** You have complete control over how the text label appears on the canvas. Right-click the link line and select **Format Label Text** to open the styling modal. From here, you can customise the following:
+
+- **Font Size:** Choose between Small (10px), Normal (12px), or Large (14px).
+
+- **Font Style & Weight:** Toggle standard, bold, or italic formatting.
+
+- **Font Colour:** Use the visual colour picker or paste a specific hex code to change the text colour.
+
+- **Rotation:** You can force the text to render Aligned with Line, horizontally (0°), diagonally right (45°), or diagonally left (-45°).
+
+**Dragging Text and Dynamic Alignment** Link labels are fully interactive. You can **click and drag the text label** to reposition it anywhere along the curve of the line or offset it entirely.
+
+If you set the label's rotation setting to **Align with line**, the system will perform dynamic geometry calculations. Wherever you drag and drop the text, the app will calculate the exact angle of the line's curve at that specific coordinate and seamlessly rotate the text so it perfectly follows the tangent of the line.
+
+**Arrow Directions:** By default, link lines flow from your starting node to your target node. To change this, right-click the link and select **Arrow Direction**. You can choose between the following:
+
+- **Forward:** Arrow points from source to destination.
+
+- **Reverse:** Arrow points from destination to source.
+
+- **Both:** Double-headed arrows (↔) pointing in both directions.
+
+**Global Line Styles** You can change the physical geometry of all custom links across your map using the **Link Style** dropdown located in the top input menu. The available routing styles are:
+
+- **Elbow:** Right-angle turns (horizontal then vertical).
+
+- **Straight (Linear):** Direct, straight diagonal lines connecting the nodes.
+
+- **Vertical Bump:** A smooth curve that extends horizontally before dropping vertically.
+
+- **Cardinal Curve & Catmull Rom:** Different mathematical variations of smooth, sweeping bezier curves.
+
+**Shaping Lines with Control Handles** If you select one of the curved link styles (Vertical Bump, Cardinal, or Catmull), you can manually sculpt the exact shape of the curve.
+
+1. **Single-click** on any curved link line.
+
+2. Two circular **control points (handles)** will appear along the path.
+
+3. Click and drag these handles horizontally to stretch, bend, or flatten the curve to route the line exactly around other nodes.
+
+4. Once you are satisfied with the shape, click anywhere on the empty canvas background to hide the control handles.
+
+## **Text Boxes**
+
+Text boxes are free-floating annotations on your mind map canvas that can carry text, icons, or a combination of both. They are perfect for adding general notes, contextual labels, or large visual markers that are not strictly tied to the task hierarchy.
+
+**Creating a Text Box** To create a new text box, simply **right-click on any empty area** of the mind map canvas. From the canvas context menu, select the **"Add Text Box"** option. A new text box will be instantly generated at the exact coordinates where you clicked.
+
+**Adding Text and Formatting** Editing a text box works similarly to editing a task node.
+
+- **Select and Edit:** Click the text box once to select it, then click it a second time to enter edit mode. This opens an inline text area where you can type your notes. To save your text, simply click anywhere outside the box.
+
+- **Format Text:** To change the typography, right-click the text box and select **"Format Text"**. This opens a styling menu where you can adjust the font family, size, weight, alignment, and text colour.
+
+**Adding Icons and Icon-Only Mode** You can attach an icon to your text box to give it quick visual context.
+
+- **Applying an Icon:** Right-click the text box and select **"Change Icon"** to open the standard Icon Picker modal. Once selected, a small version of the icon will appear in the top-left corner of the text box next to your text.
+
+- **Icon-Only Mode:** If you want a text box to act purely as a large visual marker, you can trigger "Icon-Only Mode." To do this, simply delete all the text inside the box while an icon is applied. The system will automatically detect the empty text and expand the box to display a large, **200px version of the icon** centred in the frame. To revert this, right-click the large icon and select **"Convert to Text Box"**, which will restore the text area.
+
+**Coloring Text Boxes** To change the background colour of your text box, right-click it and select **"Change Color"** to open the Text Box Colour Picker. You can select a colour using the visual picker, enter a Hex code, or choose from your recently used colours.
+
+Mind Dump features an intelligent contrast system; when you apply a new background colour to a text box, the app automatically calculates the colour's luminance and adjusts the default text colour to either dark or white to ensure it remains perfectly readable.
+
+**Linking Text Boxes** Text boxes do not need to remain isolated; you can draw arbitrary link lines to connect them to other elements on the map. Right-click the text box, select **"Add Link"**, and then click on any task node or another text box to establish a connection. These lines function exactly like task-to-task links, complete with customisable line styles, relationship labels, and directional arrows.
+
+**Moving and Resizing**
+
+- **Moving:** Text boxes are fully draggable. Simply **click and hold** anywhere on the text box (when it is not in edit mode) and drag your mouse to freely reposition it across the infinite canvas. Any connected link lines will dynamically follow the box as it moves.
+
+- **Resizing:** If you need more horizontal space for your text, you can adjust the width of the box by clicking and dragging the **resize handles** located on its left and right vertical edges. As you resize the width, the box will automatically recalculate and adjust its height to ensure all text remains visible.
+
+## **Customising Primary Branch Styles**
+
+While custom "Link Lines" (which you configure via the Link Style menu) connect arbitrary tasks across your map, your primary parent-child hierarchy is automatically connected by structural **Branches**. Mind Dump allows you to change the geometry of these main connections to suit your visual preference.
+
+**How to Change Branch Styles** To modify the look of your structural tree, locate the **Branch Style** dropdown in the top input menu. Changing this setting immediately redraws the entire map using one of three routing algorithms:
+
+- **Curved (Default):** Draws smooth, bump-like curves that extend organically from the edges of your parent nodes to their children.
+
+- **Straight:** Draws direct, linear diagonal lines connecting the parent directly to the child without any curves.
+
+- **Elbow:** Creates structured, right-angle turns where the path travels horizontally first, and then drops vertically to meet the target node.
+
+**Adjusting Branch Separation** Next to the style selector, you will find a **Separation** slider that controls the visual density of your branches.
+
+- **Auto-Adjustment:** By default, Mind Dump's layout engine dynamically calculates the optimal vertical separation between sibling branches to prevent nodes from colliding. It automatically increases the separation multiplier if tasks have multi-line text or if you have icons enabled.
+
+- **Manual Override:** If you want to force your map to be more compact or more spread out, you can manually drag the Separation slider (which scales the value between 25px and 125px).
+
+- **Note on Overrides:** The moment you manually adjust this slider, the system will disable its automatic overlap-prevention calculations for that session, locking the separation to your exact manual preference.
+
+## **The Mind Map Menu Bar**
+
+The main menu bar is located at the top of the Mind Map view and houses the primary controls for customising your workspace.
+
+**Auto-Hide and Pinning** To maximise your vertical screen space—which is crucial when navigating complex trees—the menu bar is designed to **auto-hide by default**. When you move your cursor away from the top of the screen, the menu will automatically slide out of view after a brief delay. To reveal it again, simply move your mouse back to the top edge of the window.
+
+If you are working on a larger desktop monitor and find the auto-hiding distracting, you can lock the menu in place. Next to the "Back to Task Manager" link, click the **Pin button**. This pins the menu so it remains permanently expanded, providing a more pleasant, static interface when screen real estate is not an issue.
+
+**Link Legend** Clicking the **Link Legend** button toggles a helpful reference panel in the bottom corner of your screen. This legend acts as a quick visual guide, explaining the different colours and dash patterns used for your custom link lines (such as the blue dashed line for "Relates to," the amber dotted line for "Depends on," or the red line for "Blocks").
+
+**Group By (Restructuring Your Data)** The **Group By** dropdown is one of the most powerful tools in the menu, as it fundamentally changes how your mind map branches are generated.
+
+- **Due Dates:** If you are in a Date-centric session, you can group by "Due Dates" to organise your primary branches into time-based buckets like Overdue, Today, and This Week.
+
+- **Ungrouped (Hierarchy):** Selecting this strips away other groupings and organises your tasks purely by their direct parent-child relationships.
+
+- **Custom Fields:** Beyond standard dates and hierarchies, you can dynamically rebuild your entire mind map grouped by your **Dropdown Custom Fields**. Only active custom fields configured as "Dropdowns" will appear in this list. When you select a dropdown field, the app automatically generates a primary branch for every option available in that dropdown, plus a dedicated "Unset" branch to catch any tasks that do not have a value assigned yet.
+
+**Show Icons and Show Tooltips** These two checkboxes allow you to quickly declutter your interface:
+
+- **Show Icons:** Unchecking this box will instantly hide all task emojis and large text box icons across your entire map, giving you a cleaner, text-only view.
+
+- **Show Tooltips:** Unchecking this box disables the hover tooltips that normally appear when you move your mouse over custom link lines (which typically display the link's title and hidden comments).
+
+**Centre & Zoom** If you ever lose your place on the infinite canvas, you can click the **Centre & Zoom** button. The layout engine will instantly calculate the physical boundaries of your entire mind map and smoothly pan and scale the camera so that all of your data fits perfectly in the centre of your screen.
+
+## **Restructuring Your Mind Map: Drag and Drop (Alphabetical Sessions)**
+
+Mind Dump allows you to dynamically restructure your entire project hierarchy using intuitive drag-and-drop actions. Whether you are reordering primary categories or shifting subtasks between different branches, your map instantly adapts.
+
+The drag-and-drop behaviour depends on which level of the map you are interacting with:
+
+**1. Root Task Repositioning (Alphabetical Sessions)** In Alphabetical (or Hierarchy) sessions, you have full spatial control over your **root tasks**—the primary nodes that branch immediately outward from the central session node.
+
+- **Auto-Collapse for Precision:** When you click and begin to drag a root task, the mind map will **instantly collapse** all deeper branches, temporarily displaying only the central node and your primary root tasks. This auto-collapse feature stabilizes the view, allowing you to clearly see the available "insertion gaps" and accurately drop the node into a new position around the central hub.
+
+- **Creating New Hierarchies:** If you do not want to just reorder the node, you can drag a root task and drop it **directly onto another root node**. This will instantly demote the dragged task, nesting it as a child (subtask) under the target node.
+
+**2. Deep Level Dragging (Moving Subtasks)** You can also grab tasks from the secondary level or deeper to completely reorganise your tree's structure:
+
+- **Promoting to a Root Task:** If you have a deeply nested subtask that has grown in scope, you can drag it directly onto the **central session node** (or into empty canvas space) to instantly promote it to a primary root task.
+
+- **Moving to a New Parent:** You can drag any subtask and drop it onto any other task node on the map to create a new parent-child relationship.
+
+- **Branches Travel Together:** When you move a node, you do not have to move its children individually. If the task you are dragging has its own subtasks, **all child nodes will travel with the parent node** to the new destination.
+
+**How Colours Behave When Moving** Mind Dump uses a smart cascading colour system that automatically adapts when you restructure your map.
+
+- **Inherited Colours:** By default, nodes inherit the branch colour of their parent. If you move a node that is inheriting its colour, it will automatically update and **inherit the colour of its new parent node** when dropped.
+
+- **Independent Colours:** If you have specifically applied a custom colour to a node (overriding its original parent's colour), that independent colour will travel with the node to its new location, and its children will continue to cascade that specific colour.
+
+## **Dragging Tasks in Date-Centric Mind Maps**
+
+In Date-centric sessions, drag-and-drop operations are engineered to help you rapidly reschedule and reprioritise your work, rather than just restructuring a hierarchy. How a task behaves when dropped depends entirely on the type of node you drop it onto.
+
+**Rescheduling Tasks (Date Categories)** To quickly change a task's deadline, you can drag any task node and drop it directly onto a primary date category (such as "Due Today," "This Week," or "Overdue"). The system will automatically update the task's due date to match that specific time bucket.
+
+**Reprioritising Tasks (Urgency Groups)** To adjust both a task's deadline and its priority simultaneously, you can drop the task onto an urgency group ("Urgent," "Normal," or "Not Urgent") nested under a date category. The app will instantly update the task to reflect both the new due date and the new urgency level.
+
+**Dropping into Empty Categories (Ghost Nodes)** If an urgency level does not currently contain any tasks, the mind map normally hides it to keep your view uncluttered. However, the moment you begin dragging a task across the screen, the system reveals these empty groups as dashed "ghost nodes". This ensures you always have a valid drop target if you need to move a task into a previously empty priority level.
+
+**Creating Subtasks and Date Inheritance** You can drag a task directly onto another task node to create a parent-child relationship. In Date-centric maps, child tasks are strictly tied to their parents' schedules. Therefore, when you drop a task onto a new parent, the subtask will automatically inherit both the due date and the urgency level of that parent.
+
+*Note: For this drop to be valid, the target parent task must already have a due date assigned.*
+
+**Promoting Subtasks to Standalone Tasks** If you want to un-nest a subtask, simply drag it away from its parent and drop it onto any date category or priority group. The system will remove its parent connection, promoting it to a standalone root task, and update its schedule based on where you dropped it.
+
+**Visual Feedback During Dragging** As you drag a task around the canvas, Mind Dump provides immediate colour-coded feedback to guide you:
+
+- **Valid Targets:** Nodes that can accept the drop will pulse with a green highlight and a green border.
+
+- **Invalid Targets:** Nodes that cannot accept the drop (such as dropping a task onto itself, or onto a parent task that lacks a due date) will pulse with a red highlight and display a "not-allowed" cursor.
+
