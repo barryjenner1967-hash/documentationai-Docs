@@ -391,32 +391,6 @@ While custom "Link Lines" (which you configure via the Link Style menu) connect 
 
 - **Note on Overrides:** The moment you manually adjust this slider, the system will disable its automatic overlap-prevention calculations for that session, locking the separation to your exact manual preference.
 
-## **The Mind Map Menu Bar**
-
-The main menu bar is located at the top of the Mind Map view and houses the primary controls for customising your workspace.
-
-**Auto-Hide and Pinning** To maximise your vertical screen space—which is crucial when navigating complex trees—the menu bar is designed to **auto-hide by default**. When you move your cursor away from the top of the screen, the menu will automatically slide out of view after a brief delay. To reveal it again, simply move your mouse back to the top edge of the window.
-
-If you are working on a larger desktop monitor and find the auto-hiding distracting, you can lock the menu in place. Next to the "Back to Task Manager" link, click the **Pin button**. This pins the menu so it remains permanently expanded, providing a more pleasant, static interface when screen real estate is not an issue.
-
-**Link Legend** Clicking the **Link Legend** button toggles a helpful reference panel in the bottom corner of your screen. This legend acts as a quick visual guide, explaining the different colours and dash patterns used for your custom link lines (such as the blue dashed line for "Relates to," the amber dotted line for "Depends on," or the red line for "Blocks").
-
-**Group By (Restructuring Your Data)** The **Group By** dropdown is one of the most powerful tools in the menu, as it fundamentally changes how your mind map branches are generated.
-
-- **Due Dates:** If you are in a Date-centric session, you can group by "Due Dates" to organise your primary branches into time-based buckets like Overdue, Today, and This Week.
-
-- **Ungrouped (Hierarchy):** Selecting this strips away other groupings and organises your tasks purely by their direct parent-child relationships.
-
-- **Custom Fields:** Beyond standard dates and hierarchies, you can dynamically rebuild your entire mind map grouped by your **Dropdown Custom Fields**. Only active custom fields configured as "Dropdowns" will appear in this list. When you select a dropdown field, the app automatically generates a primary branch for every option available in that dropdown, plus a dedicated "Unset" branch to catch any tasks that do not have a value assigned yet.
-
-**Show Icons and Show Tooltips** These two checkboxes allow you to quickly declutter your interface:
-
-- **Show Icons:** Unchecking this box will instantly hide all task emojis and large text box icons across your entire map, giving you a cleaner, text-only view.
-
-- **Show Tooltips:** Unchecking this box disables the hover tooltips that normally appear when you move your mouse over custom link lines (which typically display the link's title and hidden comments).
-
-**Centre & Zoom** If you ever lose your place on the infinite canvas, you can click the **Centre & Zoom** button. The layout engine will instantly calculate the physical boundaries of your entire mind map and smoothly pan and scale the camera so that all of your data fits perfectly in the centre of your screen.
-
 ## **Restructuring Your Mind Map: Drag and Drop (Alphabetical Sessions)**
 
 Mind Dump allows you to dynamically restructure your entire project hierarchy using intuitive drag-and-drop actions. Whether you are reordering primary categories or shifting subtasks between different branches, your map instantly adapts.
@@ -465,3 +439,104 @@ In Date-centric sessions, drag-and-drop operations are engineered to help you ra
 
 - **Invalid Targets:** Nodes that cannot accept the drop (such as dropping a task onto itself, or onto a parent task that lacks a due date) will pulse with a red highlight and display a "not-allowed" cursor.
 
+## **Searching Your Mind Map**
+
+To quickly locate specific tasks within a large or complex project, Mind Dump provides a powerful Search and Filter panel located on the left side of the canvas.
+
+**Quick Access:** To instantly jump to the search input field without reaching for your mouse, you can use a global keyboard shortcut. Pressing **Alt+f** (on Windows) or **Option+f** (on Mac) will immediately focus the search box and highlight any existing text, allowing you to begin typing right away.
+
+**How Search Works:** The search feature evaluates task names and operates in two distinct visual modes depending on how you interact with it:
+
+- **Dynamic Highlighting (Standard Mode):** As you type your keyword into the search box, the mind map reacts instantly. It works in tandem with the filtering system to highlight tasks that contain your search query while actively dimming or hiding the non-matching branches around them, helping your specific results stand out within the broader context of the tree.
+
+- **Focused Search Mode:** If you want to completely isolate your results and remove all visual clutter, type your query and press the **Enter** key. This triggers "Focused Search Mode." The system will calculate all matching tasks and temporarily rebuild the mind map canvas to display *only* those specific search results. When this mode is active, a prominent banner will appear at the top of the screen indicating exactly how many search results are currently being shown. *Note: Because the map's structure is temporarily altered, you cannot use the inline forms to create new tasks while in Focused Search Mode*.
+
+**Exiting Search Results:** When you are finished reviewing your isolated results and need to restore the full mind map view, you have three simple options:
+
+- **Using the Keyboard:** While the search box is focused, press the **Escape** key.
+
+- **Using the Banner:** Click the **Show All** button located directly on the "Showing search results" banner at the top of your canvas.
+
+- **Clearing Filters:** Click the **Clear All Filters** button at the bottom of the Search and Filter panel. This is a comprehensive action that will empty the search box text, remove any other active urgency or date filters, and exit focused mode simultaneously.
+
+*Note: If you use the Escape key or the "Show All" button to exit Focused Search Mode, the full map structure is restored, but the text remains in the search box. This means those specific tasks will remain dynamically highlighted on your canvas until you delete the search text*.
+
+## **Advanced Search: Using Custom Filters**
+
+When a simple keyword search isn't enough to isolate the specific tasks you need, Mind Dump provides a powerful Custom Filters system. By clicking the **Add Custom Filters** button in the Search and Filter panel, you can build specific, targeted rules to narrow down your visual workspace.
+
+**Building Rules and the "AND" Relationship** In the Custom Filters modal, you can create up to five distinct filter rules simultaneously. You can filter your tasks across a variety of criteria, such as Due Date, Time Estimate, Completion Status, or any of your custom Dropdown fields.
+
+When you apply multiple filter rules at the same time, the system uses strict **AND logic**. This means that for a task to be displayed on your filtered mind map, it **must meet all of the active conditions simultaneously**.
+
+**Filtering by Branch Color** One of the most unique filter options is the ability to filter tasks by their visual color. If you select **Node Color** as your filter field, the interface will change to display a color swatch picker showing the exact colors currently used across your map.
+
+- You can set the operator to **"is"** or **"is not"** to include or exclude specific colours.
+
+- Because the colour filter evaluates the *effective* colour of a node, it will accurately find tasks that have inherited their colour from a parent branch.
+
+- You can even select the patterned "Uncoloured" swatch to specifically hunt down tasks that haven't been assigned a colour yet.
+
+**The "Search All Tasks" Checkbox (Important)** At the top of the Custom Filters modal, you will find a checkbox labelled **"Search all tasks (including nested)"**. Understanding how this toggle works is critical for getting accurate results:
+
+- **By default (Unchecked):** The filtering engine only evaluates your primary, root-level tasks. It will not look inside your branches.
+
+- **When Checked:** The engine performs a comprehensive deep search through your entire hierarchy, evaluating every single subtask.
+
+**If you ever apply a filter and do not get the results you expect**, it is highly likely that your matching tasks are nested deeper inside the mind map. You simply need to open the filter modal and **select the "Search all tasks" box**. The system will then find those deep matches and automatically expand their parent nodes so you can see them on the canvas. Note that searching all tasks is more comprehensive but can be slightly slower on massive maps.
+
+**Clearing Your Filters** Once you have finished working with your isolated tasks, you can easily clear your custom filters to restore your full mind map. You can do this in three ways:
+
+1. Click the small, underlined **Clear** button on the blue "custom filters active" banner in the left panel.
+
+2. Open the Custom Filters modal and click the **Clear All Filters** button at the bottom.
+
+3. Click the global **Clear All Filters** button located at the very bottom of the main Search and Filter panel, which will also wipe out any text searches or priority filters you have active.
+
+## **The Mind Map Menu Bar**
+
+The main menu bar is located at the top of the Mind Map view and houses the primary controls for customising your workspace.
+
+**Auto-Hide and Pinning** To maximise your vertical screen space—which is crucial when navigating complex trees—the menu bar is designed to **auto-hide by default**. When you move your cursor away from the top of the screen, the menu will automatically slide out of view after a brief delay. To reveal it again, simply move your mouse back to the top edge of the window.
+
+If you are working on a larger desktop monitor and find the auto-hiding distracting, you can lock the menu in place. Next to the "Back to Task Manager" link, click the **Pin button**. This pins the menu so it remains permanently expanded, providing a more pleasant, static interface when screen real estate is not an issue.
+
+**Link Legend** Clicking the **Link Legend** button toggles a helpful reference panel in the bottom corner of your screen. This legend acts as a quick visual guide, explaining the different colours and dash patterns used for your custom link lines (such as the blue dashed line for "Relates to," the amber dotted line for "Depends on," or the red line for "Blocks").
+
+**Group By (Restructuring Your Data)** The **Group By** dropdown is one of the most powerful tools in the menu, as it fundamentally changes how your mind map branches are generated.
+
+- **Due Dates:** If you are in a Date-centric session, you can group by "Due Dates" to organise your primary branches into time-based buckets like Overdue, Today, and This Week.
+
+- **Ungrouped (Hierarchy):** Selecting this strips away other groupings and organises your tasks purely by their direct parent-child relationships.
+
+- **Custom Fields:** Beyond standard dates and hierarchies, you can dynamically rebuild your entire mind map grouped by your **Dropdown Custom Fields**. Only active custom fields configured as "Dropdowns" will appear in this list. When you select a dropdown field, the app automatically generates a primary branch for every option available in that dropdown, plus a dedicated "Unset" branch to catch any tasks that do not have a value assigned yet.
+
+**Show Icons and Show Tooltips** These two checkboxes allow you to quickly declutter your interface:
+
+- **Show Icons:** Unchecking this box will instantly hide all task emojis and large text box icons across your entire map, giving you a cleaner, text-only view.
+
+- **Show Tooltips:** Unchecking this box disables the hover tooltips that normally appear when you move your mouse over custom link lines (which typically display the link's title and hidden comments).
+
+**Centre & Zoom** If you ever lose your place on the infinite canvas, you can click the **Centre & Zoom** button. The layout engine will instantly calculate the physical boundaries of your entire mind map and smoothly pan and scale the camera so that all of your data fits perfectly in the centre of your screen.
+
+## **Exporting and Sharing Your Mind Map**
+
+When you need to share your workspace, back up your data, or use your mind map in another application, Mind Dump provides three dedicated export options located in the top menu bar.
+
+**1. Export (OPML File Download)** The **Export** button allows you to download your mind map's underlying structural data as an OPML (.opml) file. OPML (Outline Processor Markup Language) is a standard text format widely supported by other mind mapping, outlining, and note-taking applications.
+
+- **How it works:** When you click Export, the app translates your visual tree into a nested text outline and immediately triggers a file download to your computer.
+
+- **Smart Exporting:** The export intelligently respects your current view and grouping settings. If you are in a Date-centric session, the outline will be grouped by Dates and Urgency levels. If you are in an Alphabetical session, it will export your pure parent-child hierarchy. Furthermore, if you currently focus on a specific task or category, the export will include only that focused section of the map.
+
+**2. Copy OPML** The **Copy OPML** button performs the exact same data translation as the standard Export button, but instead of downloading a file, it copies the raw OPML text directly to your computer's clipboard.
+
+- **How to use it:** Click the button, and it will briefly turn green and display "Copied!" to confirm the action. You can then immediately paste the structural data directly into a text editor, an email, or another outlining tool.
+
+**3. Export PDF** If you want to capture the visual representation of your mind map rather than just its data, use the **Export PDF** button. This generates a high-quality visual snapshot of your entire canvas.
+
+- **How it works:** When clicked, the button will display "Generating..." while it processes the map. The system automatically calculates the physical boundaries of all your visible nodes, perfectly centres the view, and scales your mind map so that it fits within a single A4 Landscape page document.
+
+- **What you get:** It produces a file named `mindmap.pdf` containing a clean, white-background image of your workspace. Because it captures whatever is currently on the screen, any search filters or focus modes you have active will be perfectly reflected in the final PDF.
+
+*Note: For extremely large and complex mind maps, the system will scale the map down to ensure everything fits on the single A4 page, which may result in smaller text in the exported document.*
