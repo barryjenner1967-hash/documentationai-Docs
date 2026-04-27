@@ -206,3 +206,27 @@ To help you maintain a consistent visual language across your complex projects, 
 **Selecting and Saving an Icon** Once you locate your preferred icon in the grid, simply click on it. The chosen icon will become highlighted to indicate your selection. To finalise the addition and apply the icon to your mind map node, click the **Save** button located at the bottom of the modal.
 
 **Removing an Icon** If you decide you no longer want an icon attached to a node, open the Icon Picker Modal for that specific node again. Instead of selecting a new icon, click the **Clear Icon** button at the bottom of the modal. This will immediately remove the icon from the node and update your database.
+
+## **Node Colors: Styling and Organising Your Map**
+
+Adding colours to your mind map is an excellent way to visually organise your workspace. Applying specific colours helps you instantly differentiate between different project streams, categories, or branches. Mind Dump also automatically adjusts the text colour (to dark or light) based on your chosen background to ensure perfect readability.
+
+**Using the colour picker** To change a node's colour, right-click the node to open its context menu (or hover card) and click the **Colour** button. This opens the branch colour picker, which offers a few ways to select your perfect shade:
+
+- **Colour Square / Colour Picker:** Click the colour picker input to open your system's visual colour square, allowing you to manually blend and select any custom colour.
+
+- **Hex Code:** If you know the exact colour you want, you can type or paste its Hex code directly into the input field.
+
+- **Recently Used Colours:** To help you maintain a consistent visual language, the picker displays a grid of your most recently used colours. This makes it incredibly easy to reuse the exact same shades across your map without needing to remember their specific Hex codes.
+
+**Colour Hierarchy and Cascading** Mind Dump uses a smart hierarchical colour system. When you apply a colour to a node, that colour automatically **cascades down the branch**, applying to all of its child tasks and the connecting link lines.
+
+However, you retain full control over downstream items. If you select a child task deeper in the branch and assign it a *new* colour, that task will adopt the new colour. Furthermore, this new colour will now cascade down to its own children, effectively overriding the original parent's colour for that specific sub-branch.
+
+**Removing Colours:** If you want to revert a node back to its default styling, open the Colour Picker and click **Clear Colour**. If you are clearing a parent or group node, you can also use the **Clear Branch Colours** button, which will not only remove the colour from the selected node but will also **cascade the colour removal** down through all of its descendant nodes and nested groups.
+
+**Coloring in Date-Centric Maps** While Alphabetical maps allow complete free-form colouring, Date-centric maps handle colours a bit differently at the top level to help you distinguish your schedule.
+
+In Date-centric maps, the static priority (urgency) groups automatically generate their colours based on the parent Date group. Instead of requiring you to manually colour each priority level, the system automatically **rotates the colour hue** to provide clear visual differentiation. For example, the "Urgent" group shifts the parent date's colour hue by 90 degrees, while the "Not Urgent" group shifts it by 270 degrees.
+
+Despite this automated grouping at the top, **you can still manually colour any individual task node** within those groups. If you apply a colour directly to a task inside a date or urgency group, that custom colour will take priority and override the automated grouping colours.
