@@ -94,6 +94,11 @@
                 "icon": "brain-icon"
               },
               {
+                "title": "Using the Outliner",
+                "path": "using-the-outliner",
+                "icon": "arrow-down-az"
+              },
+              {
                 "title": "Using the Brainstorm Tool",
                 "path": "using-the-brainstorm-tool",
                 "icon": "brain-circuit-icon"
@@ -158,6 +163,11 @@
                 "title": "Kanban",
                 "path": "kanban",
                 "icon": "columns3-icon"
+              },
+              {
+                "title": "Outliner",
+                "path": "outliner",
+                "icon": "arrow-down-az"
               },
               {
                 "title": "LaTeX",
