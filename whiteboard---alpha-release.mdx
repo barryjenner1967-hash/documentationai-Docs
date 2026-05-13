@@ -1,0 +1,217 @@
+---
+title: Whiteboard (Early Release)
+description: >-
+  The whiteboard is in Alpha Release and continues to be developed. This guide
+  covers the current standing.
+---
+Here is an introduction for the Whiteboard section of the Mind Dump manual, incorporating the features and aims of the application based on the provided sources.
+
+---
+
+# Introduction to the Whiteboard
+
+Welcome to the **Mind Dump Whiteboard**! Currently in an early release phase, the Whiteboard is a powerful, free-form spatial workspace designed with one ultimate goal: **to bring the rest of the Mind Dump application together**.
+
+While tools like Outliners, Mind Maps, and Task Lists are excellent for structured thinking, the Whiteboard provides an infinite 2D canvas where you can visually combine, arrange, and connect all of your Mind Dump data in a way that makes sense to you.
+
+Here is what you can do with the Whiteboard:
+
+**1. Bring Your App Together** The Whiteboard acts as a central hub for your entire workspace. You can drop in interactive links that connect directly to your existing **Mind Maps, Kanban boards, Outlines, Brainstorms, and Reports**. Mind Map links even generate visual snapshot thumbnails of your maps right on the board.
+
+**2. Dynamic Task & Session Integration** You don't just have to link to other views; you can pull your actual data onto the canvas. You can add individual **Task References** directly from your sessions, or embed entire **Session Task Lists**. These lists are highly dynamic—you can hide completed tasks, filter them using custom rules, select specific custom fields to display, and even calculate numerical totals right on the canvas.
+
+**3. Advanced Visual Structuring** To help organize your thoughts, the Whiteboard features **Segmented Containers** that allow you to drop items into structured zones. These come with built-in layout presets for **Kanban (1x3), SWOT analysis (2x2), and Swimlanes (3x1)**.
+
+**4. Rich Canvas Elements** Build out your ideas using a variety of native elements. You can add **Text boxes, Lists, Headline Text, Icons, and Shapes** (squares, circles, and triangles). For highly technical notes, the Whiteboard also fully supports **LaTeX text** for mathematical and scientific formatting. Once your elements are on the board, you can freely connect them with customisable lines and arrows.
+
+**5. External Workflows** Your Mind Dump data doesn't exist in a vacuum, so the Whiteboard lets you bring in the outside world. You can add **Web Links** (which automatically fetch the website's favicon) and use **Google Doc placeholders** to link, upload, or freshly create Google Docs, Spreadsheets, and Presentations directly from your board.
+
+Because this is an early release, the Whiteboard is actively in development and will continue to grow. Dive in, start snapping elements to the grid, and discover a completely new way to visualise your Mind Dump database!
+
+## Whiteboard Files
+
+Unlike other tools in the application, whiteboards in Mind Dump are independent files that exist in their own distinct directory structure and are not attached to any specific session. Because they operate independently, you have the freedom to create as many whiteboards as you need to organise your different projects and workflows.
+
+You never have to worry about manually clicking a save button. As you add, move, or edit elements on your canvas, the whiteboard automatically saves your changes in real time.
+
+To prevent data loss, Mind Dump has built-in protections to ensure a whiteboard cannot be accidentally overwritten if you try to edit it in two places at once. Every time the system performs an auto-save, it checks the timestamp of the board loaded on your screen against the most recent version on the server. If it detects that another device has saved changes to the whiteboard since you originally opened it, the auto-save is immediately blocked and a conflict warning is triggered.
+
+When such an event happens, the system gives you three options to safely handle the conflict:
+
+- **Reload:** This loads the newest changes from the other device directly onto your screen while still preserving your local undo/redo edit history.
+
+- **Save As:** This allows you to safely save your current local work as a brand-new, duplicated whiteboard file, ensuring no data from either device is lost.
+
+- **Override:** This option forces your local version to save, intentionally overwriting and replacing any changes that were made on the other device.
+
+## Creating a Whiteboard
+
+To create a new whiteboard in Mind Dump, follow these steps:
+
+1. Click on the **File ▾** button located in the top toolbar.
+
+2. Select **New\...** from the dropdown menu.
+
+3. The "Create Whiteboard" browser window will appear on your screen.
+
+4. Type a title for your whiteboard into the **Name** input field. If you leave this field blank, the application will default to naming it "Untitled Whiteboard". *(If you have folder hierarchy enabled, you can also navigate to a specific folder where you want to save the new whiteboard.)*
+
+5. Click the **Create** button to generate and open your new whiteboard.
+
+**Note:** If you are accessing the whiteboard workspace for the very first time and currently have no existing boards, the system will automatically generate a starting board for you titled "My First Whiteboard".
+
+## Elements
+
+Elements are the core building blocks that you place onto the Mind Dump Whiteboard canvas to build your visual workspace. While there is a wide variety of elements available to choose from—ranging from simple shapes and interactive web links to dynamic session task lists and segmented containers—that each offer their own unique and specialised features, the vast majority of these elements share the exact same fundamental behaviours when it comes to being selected, moved, resized, and modified. To help you understand the basic principles of interacting with the whiteboard, we will start by exploring a standard text box. Once you learn how to manage a text box, you will intuitively know how to handle almost any other element on your board.
+
+## Adding Your First Element (Text Box)
+
+To add a text box, or any other element, you can use either the top toolbar menu or the canvas context menu.
+
+**Using the Top Menu** Click the **Add elements ▾** button located in the top toolbar. From the dropdown menu, select **Text** to insert a text box. This menu also allows you to add many other elements, such as Segmented Containers, Lists, Shapes, and Links.
+
+When you add an element using the top menu, it is placed at a **default starting position near the top-left** of the whiteboard space. The system automatically staggers the placement slightly based on how many elements have already been added to the board so they don't completely overlap.
+
+**Using the Right-Click Context Menu** Alternatively, you can right-click anywhere on the empty whiteboard canvas background to open the "Add items" context menu. Select **Add Text** to create your text box.
+
+When you add an element using this right-click method, the system captures your cursor's coordinates, and the new element is inserted **exactly at the location where your mouse pointer was** when you right-clicked.
+
+## Whiteboard Elements, Text Box Description
+
+While this section specifically focuses on the Text Box, it is important to note that **most elements on the Whiteboard share these fundamental behaviours and components**.
+
+### Moving and Resizing Elements
+
+Once an element is on the board, you can easily reposition it. Simply **click and drag anywhere on the element** to move it freely around your canvas.
+
+If you need more space within an element, you can expand it using the **drag handle** located in the bottom-right corner. Clicking and dragging this handle allows you to custom-adjust both the width and the height of the element.
+
+### The Inspector Panel
+
+Whenever you select an element on the canvas, the **Inspector panel** will populate with information on the right side of your screen. This panel acts as a detailed control centre for the selected node, allowing you to view and directly edit its exact properties. The Inspector contains the following fields:
+
+- **Type:** The system classification of the element (e.g., text, box, link\_ref).
+
+- **Title:** The display name or header of the element.
+
+- **Content:** The internal text or data housed within the element.
+
+- **Dimensions:** The exact **Width** and **Height** of the element in pixels.
+
+- **Origin Data:** For elements pulled from elsewhere in Mind Dump or the web, it shows the **Origin URL** and **Origin Session ID**.
+
+### Text Box Specific Capabilities
+
+Text boxes are designed for rich, free-form note-taking and offer several specific formatting capabilities:
+
+- **Writing Text:** You can click directly into the text box and begin typing inline. When you are finished, you can simply press **Esc** to exit the editing mode.
+
+- **Line Breaks:** You can press **Enter** to insert line breaks and structure your paragraphs.
+
+- **Scrolling:** Text boxes are designed to handle long notes. If your text exceeds the visual height of the box, the content will automatically become scrollable so you can read everything without having to resize the element.
+
+- **Rich Text Formatting:** You can emphasise your text using standard keyboard shortcuts. Highlight your text and use **Cmd/Ctrl+B** to make it **bold**, **Cmd/Ctrl+I** for *italic*, and **Cmd/Ctrl+U** for <u>underlined</u> text.
+
+### Context Menu
+
+To access advanced controls for individual elements, you can open the **context-sensitive menu** by simply **right-clicking directly on the element**. This menu provides several powerful options for customising the appearance and relationships of your nodes:
+
+- **Connect Items:** Selecting this option puts you into connect mode, allowing you to connect elements using a link line. To connect two elements, select the Connect Items menu option and then select the link line recipient element. Once connected, these lines are fully dynamic. Even if you drag and move the connected elements around the board, **the lines will automatically stretch, rotate, and maintain their link**. *(Note: We will cover the specific details of customising these lines and arrows in a later section.)*
+
+- **Edit Border Style:** This opens a menu where you can modify the element's outline. You can choose a new border style (such as **solid, dashed, dotted, or double**) and adjust the specific border weight (thickness) in pixels.
+
+- **Edit Colours:** Selecting this option opens a colour picker that allows you to independently change the element's **Fill Colour** (the inner background) and **Border Colour.**
+
+- **Edit Font Style:** By default, the text components inside your elements inherit a **board-wide style setting** (which we will explain how to configure later). However, if you want a specific element to stand out, you can use the Edit Font Style menu to **overwrite the board-wide settings**. This allows you to apply a custom font family, size, and text colour specifically to that selected element.
+
+- **Reset Node Style:** If you have applied custom colours, border settings, or font style overwrites to an element and want to clear them, this option removes those custom edits and reverts the element back to its default appearance, automatically reconnecting it to the board-wide styles.
+
+- **Delete:** Choosing **Delete** from the bottom of the context menu will immediately remove the element from your whiteboard. Alternatively, you can simply select the element and press the **Delete** or **Backspace** key on your keyboard to instantly remove it.
+
+## Whiteboard Elements Introduction
+
+Here is a quick overview of the different elements you can add to your whiteboard from the "Add elements" menu, broken down by their general purpose:
+
+**Text and Notes**
+
+- **Text:** A standard box for writing free-form, rich text notes directly on your canvas.
+
+- **Headline Text:** Large, borderless text specifically designed to act as titles or section headers.
+
+- **List:** A dedicated element for maintaining structured bulleted or numbered lists.
+
+- **LaTeX text:** A specialised text editor for formatting and rendering mathematical and scientific formulas.
+
+**Containers and Structure**
+
+- **Box:** A basic visual container that allows you to drop and group other items inside.
+
+- **Segmented Container:** A highly structured grid container that divides space into customisable rows and columns, ideal for layouts such as Kanban boards or SWOT analyses.
+
+- **Empty Session Task Table:** A blank, structured table where you can drop individual task cards to automatically generate typed columns.
+
+**Shapes and Visuals**
+
+- **Square, Circle, and Triangle:** Basic geometric shapes to visually organise or decorate your board.
+
+- **Icon:** A visual symbol that you can select from a searchable built-in icon picker.
+
+**Mind Dump Data Integrations**
+
+- **From Session (Task Reference):** An individual, interactive task card pulled directly onto the board from your database.
+
+- **Session Task List:** A dynamic, heavily filterable table containing multiple tasks pulled from a specific session.
+
+- **Mind Map, Kanban, Outline, Brainstorm, and Report Links:** Interactive shortcut nodes that connect your whiteboard directly to other specialised views and documents within your workspace.
+
+**External Integrations**
+
+- **Web Link:** A shortcut to an external webpage that will attempt to automatically fetch and display the website's favicon.
+
+- **Doc Placeholder:** A specialised link that connects your board directly to an external Google Document, Spreadsheet, or Presentation.
+
+## Using the Text Box
+
+At its core, the **Text Box** is essentially a dedicated, free-floating note box. Its primary purpose is to allow you a flexible space to capture your thoughts, allowing you to create anything from brief, single-line reminders to extensive, multi-paragraph notes.
+
+Because your text is securely stored within an independent element that can be freely moved around the board, it enables a highly structured and spatial approach to your writing. Instead of being confined to a rigid, top-to-bottom document, you can physically organise your text, group related notes together, and visually map out the flow of your ideas across the canvas to perfectly suit your thought process.
+
+## Headline Text Element
+
+The **Headline Text** element is a specialised, single-line free text box specifically designed to act as a prominent title for your complete whiteboard or to clearly label the different structural areas of your workspace.
+
+While it shares the fundamental movement and resizing behaviours of a standard text box, it is intentionally borderless, seamlessly blending into your canvas as a clean section header.
+
+Here is how you can utilise and customise the Headline Text element:
+
+- **Custom Font Styles:** You can easily update the font style to suit the visual needs of your specific application. To do this, simply **right-click the headline and select 'Edit Font Style...'** from the context-sensitive menu.
+
+- **Text Alignment:** The headline container is fully resizable. Once you drag the handle to expand the box to your desired width, you can format the exact text placement. By right-clicking the element, you can choose to have your text **Align Left, Align Center, or Align Right** within the boundaries of the box.
+
+- **Dynamic Connections:** Headlines do not have to just float on the page; they can be structurally connected to other elements. Using the context menu's **Connect Items** feature, you can draw lines linking your title directly to the specific groups of notes or containers that it describes.
+
+## List Element
+
+The **List** element is functionally very similar to the standard Text Box and allows for the exact same rich text formatting options, such as bold, italic, and underline. However, its defining characteristic is that it is specifically designed to enforce a structured bulleted or numbered list arrangement.
+
+When you type inside a List element, pressing **Enter** automatically creates a new list item, ensuring your notes stay neatly organised within the list flow. You can easily switch between list arrangements using keyboard shortcuts: pressing **Alt+B** will format the text as a bulleted list, while pressing **Alt+N** will switch it to a numbered list.
+
+Additionally, the list box fully supports indented lists, making it easy to create sub-items and nested hierarchies. To structure your list, simply press the **Tab** key to indent a selected item and use **Shift+Tab** to outdent it back.
+
+## LaTeX Element
+
+The **LaTeX text** element is a specialised note block designed to allow you to insert LaTeX-formatted text directly onto your whiteboard. Its primary purpose is to provide a dedicated space where you can write and instantly render complex mathematical and scientific formulas right inside your visual workspace.
+
+For more comprehensive guidance on how to structure and format your equations, please review the dedicated **LaTeX** instructions located in the Core Concepts section elsewhere in this manual.
+
+## Container (Box)
+
+The **Container** element (often referred to as a **Box**) serves as a dedicated space to group other elements together. Its primary purpose is to help you visually structure your whiteboard by allowing you to drop multiple related items inside a single, unified box. Because it contains the grouped items, you can easily drag the container to move all of those elements around the canvas together.
+
+To give your group context, you can assign it a name and add extra descriptive text. You can do this by selecting the container and updating the **Title** and **Content** fields in the right-hand **Inspector panel**. Alternatively, you can double-click directly on the container's title or body text on the canvas to edit them inline.
+
+If you need to manually adjust the container's dimensions, you can click and drag the **resize handle** located in its bottom-right corner. You can also set exact pixel dimensions by editing the Width and Height fields within the Inspector panel.
+
+To make organising effortless, the container features dynamic auto-expansion. If your container is full and you drop a new element into it that exceeds its current boundaries, the container will stay in its original position but automatically expand its width and height to securely fit the new item inside.
+
+&#x20;

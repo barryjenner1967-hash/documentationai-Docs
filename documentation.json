@@ -84,6 +84,11 @@
             "icon": "compass",
             "pages": [
               {
+                "title": "Whiteboard - Alpha Release",
+                "path": "whiteboard---alpha-release",
+                "icon": "clipboard-icon"
+              },
+              {
                 "title": "Using the Calendar View",
                 "path": "using-the-calendar-view",
                 "icon": "calendar1-icon"
