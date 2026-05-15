@@ -175,6 +175,11 @@
                 "icon": "arrow-down-az"
               },
               {
+                "title": "Whiteboarding",
+                "path": "whiteboarding",
+                "icon": "circuit-board"
+              },
+              {
                 "title": "LaTeX",
                 "path": "latex",
                 "icon": "edit"
