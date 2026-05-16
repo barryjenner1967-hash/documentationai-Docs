@@ -1,0 +1,26 @@
+---
+title: Integration with Google Docs
+---
+Mind Dump features a seamless integration with Google Workspace, allowing you to embed, select, and create Google Documents directly within your Mind Dump sessions. **Rather than attempting to duplicate the highly robust and performant file management and document creation systems already provided by Google**, Mind Dump leverages their world-class infrastructure. This ensures you get the most reliable and powerful document editing experience possible without leaving your workflow.
+
+#### **Security and Authorization**
+
+Keeping your personal data and files secure is our top priority. When you log into your Google account to enable this integration, **the entire authorization process is handled exclusively by Google** via their secure Identity Services. Mind Dump never asks for, sees, or stores your Google password.
+
+This secure connection is made possible through an industry-standard authorization process called **OAuth 2.0**.
+
+#### **What is OAuth and How Does it Work?**
+
+OAuth (Open Authorization) is a secure digital "valet key." It allows you to grant a third-party application (like Mind Dump) access to specific parts of your account without ever handing over your actual login credentials.
+
+Here is a brief breakdown of how OAuth keeps your files safe:
+
+1. **Secure Redirection:** When you choose to link your Google Drive, Mind Dump redirects you to Google's official login page.
+
+2. **User Consent:** You log in directly with Google. Google will then ask you to confirm exactly what permissions Mind Dump is requesting.
+
+3. **The Access Token:** Once you approve, Google generates a secure, temporary **"access token"** and hands it to Mind Dump. Mind Dump uses this token—not your password—to interact with your files.
+
+4. **Targeted Permissions:** For Mind Dump, this token specifically grants the permissions required to **create new documents (such as Docs, Sheets, and Presentations), upload files to your specific user folders, and select files from your existing folders**.
+
+Because Mind Dump relies entirely on Google's OAuth tokens, your overarching Google account remains safely locked behind Google's own security architecture. Furthermore, you remain in complete control: you can easily revoke this access token directly from your Google account security settings at any time, instantly removing Mind Dump's access without needing to change your password.

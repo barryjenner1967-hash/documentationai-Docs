@@ -107,6 +107,11 @@
                 "title": "Using the Brainstorm Tool",
                 "path": "using-the-brainstorm-tool",
                 "icon": "brain-circuit-icon"
+              },
+              {
+                "title": "Google Drive in Mind Dump",
+                "path": "google-drive-in-mind-dump",
+                "icon": "hard-drive-icon"
               }
             ]
           },
@@ -183,6 +188,11 @@
                 "title": "LaTeX",
                 "path": "latex",
                 "icon": "edit"
+              },
+              {
+                "title": "Google Drive & OAuth",
+                "path": "google-drive-oauth",
+                "icon": "folder-check"
               }
             ]
           },

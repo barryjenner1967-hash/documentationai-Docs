@@ -1,0 +1,68 @@
+---
+title: Managing Google Document Files in Mind Dump
+---
+Mind Dump allows you to seamlessly integrate your Google Workspace documents and files directly into your tasks. Instead of storing files locally, Mind Dump uses your existing Google Drive infrastructure, ensuring you maintain a single, secure source of truth for all your documents.
+
+#### **1. Setting up the Gallery Field**
+
+To enable Google file integration for your tasks, you must first add a **Gallery** custom field to your session.
+
+- Navigate to **Settings -> Session Settings -> User Defined Fields** (or Custom Fields).
+
+- Create a new custom field and set the Field Type to **Gallery**.
+
+- Adding this field to your session activates the necessary Google OAuth features required to manage files.
+
+#### **2. Secure Login and OAuth**
+
+Before you can interact with the Gallery field when adding or editing a task, you must be logged into your Google account.
+
+- You can log in using another tab within the same browser session. If you are not logged in, Mind Dump will automatically display a secure Google login prompt when you attempt to access a gallery function.
+
+- **Your Security is Guaranteed:** Mind Dump *never* has access to your Google account credentials or password. The entire login process is handled directly by Google through an industry-standard protocol called **OAuth 2.0**.
+
+- When you approve the connection, Google issues Mind Dump a secure, **short-lived access token**. This token acts as a temporary valet key, granting Mind Dump only the specific permissions it needs (such as the ability to upload files to your folders and create new documents) without compromising your overarching Google account.
+
+#### **3. Using the Gallery Field in Tasks**
+
+Once authenticated, the Gallery field provides powerful file management capabilities whenever you add or edit a task:
+
+- **Adding an Existing File:** You can open the Google file picker to browse your existing Google Drive folders. Once you select a file, Mind Dump securely attaches a reference to that file directly to your task record.
+
+- **Uploading a New File:** If you have a file on your computer, you can use the "Upload" function. Mind Dump will first upload this file securely to your designated Google Drive folder using the Google Drive API, and then instantly attach the newly uploaded file to your Mind Dump task record.
+
+- **Creating a New Document:** You don't have to leave Mind Dump to start working. By clicking "Create New," you can generate brand-new Google Workspace files—including Google Documents, Spreadsheets, Presentations, Forms, or Drawings. The file is created directly in your Google Drive and automatically linked to your current Mind Dump record.
+
+#### **4. Refreshing File Information**
+
+Because your files live in Google Drive, **Google acts as the ultimate source of truth**. If you or a collaborator changes a file's name or metadata directly in Google Drive, the information displayed in Mind Dump may temporarily fall out of sync. To fix this, you can use the **Refresh** function on the Gallery field. This action securely reaches out to Google Drive, collects the most up-to-date file data, and updates the Mind Dump record to match.
+
+## **Configuring the Google Drive Integration Folder**
+
+In **Settings -> Global Settings**, you have the option to specify a dedicated Google Drive Integration Folder. Without providing this folder, Mind Dump defaults to using your complete Google Drive ("My Drive") as the destination when creating, uploading, and saving new files. By designating a specific Google Drive folder, you are providing a single, restricted workspace for Mind Dump to operate within. This practice significantly increases your account's security and ensures your files maintain a clean, organised structure rather than cluttering your main Drive directory.
+
+#### **Obtaining and Adding the Folder URL**
+
+Linking your desired folder is designed to be as simple as possible:
+
+1. Open your web browser and navigate to your Google Drive at <a href="https://drive.google.com/" target="_blank" rel="noopener noreferrer">https\://drive.google.com/</a>.
+
+2. Create a new folder or double-click to open an existing folder you want to dedicate to Mind Dump.
+
+3. Once inside the folder, click on your browser's address bar, highlight the **entire URL**, and copy it.
+
+4. Paste this complete URL into the designated text box in Mind Dump's Global Settings.
+
+#### **How Mind Dump Processes the URL**
+
+You do not need to worry about formatting the link manually. A standard Google Drive folder URL looks something like this: 
+
+`https://drive.google.com/drive/folders/FOLDER_ID_HERE`.&#x20;
+
+When you paste the complete URL into the settings, Mind Dump automatically strips away the unnecessary web address components and extracts only the unique "Folder ID." This isolated ID provides  the precise information Google's API requires to securely identify your folder and route your files to the right place.
+
+#### **Session and Whiteboard-Specific Folders**
+
+While the Global Settings define the default folder for your entire Mind Dump environment, you are not limited to using just one folder. Individual sessions and whiteboards can be configured to use their own completely separate Google Drive folders. This allows you to meticulously compartmentalise your different projects.
+
+*Note: The steps for assigning and overriding these specific folders are explained in detail within the Whiteboard and Session management instructions elsewhere in this manual.*
