@@ -84,6 +84,11 @@
             "icon": "compass",
             "pages": [
               {
+                "title": "Using the Zettelkasten - Alpha release",
+                "path": "using-the-zettelkasten---alpha-release",
+                "icon": "book-audio"
+              },
+              {
                 "title": "Whiteboard - Alpha Release",
                 "path": "whiteboard---alpha-release",
                 "icon": "clipboard-icon"

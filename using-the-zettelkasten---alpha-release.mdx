@@ -1,0 +1,89 @@
+---
+title: Using the Zettelkasten
+---
+### The Mind Dump Zettelkasten Session Structure
+
+As we explored in the introduction, Niklas Luhmann’s original physical system was not a single chaotic drawer, but rather two strictly separated slip-boxes: one for his bibliographic references and one for his main, interconnected thoughts.
+
+To faithfully replicate this dual-box architecture in a digital environment, Mind Dump utilizes a specialized **Session Group** structure. Each unique Zettelkasten you build will reside within its own dedicated group, perfectly isolating your knowledge engine while allowing cross-linking where necessary.
+
+#### How to Create Your Zettelkasten Group
+
+Setting up your Zettelkasten is designed to be a guided, automated process. To create your new Zettelkasten group, follow these steps:
+
+1. Navigate to the sidebar of the main view and click **Manage Sessions** -> **Manage Groups**.
+
+2. Click the **New Group** button.
+
+3. Enter your desired **Zettelkasten Group Name** (we highly recommend including the word "Zettelkasten" in the title so it is easily identifiable in your workspace).
+
+4. Check the **Zettelkasten Group** checkbox. This is a critical step, as it tells the application to treat this group differently than standard project folders.
+
+5. Click **Create Group**.
+
+Checking that box triggers Mind Dump to optimise your display and assist you in generating the specialised architecture required for a functional Zettelkasten.
+
+#### The Preconfigured Architecture
+
+Once initiated, every Zettelkasten session group is automatically structured to include one **Bibliography Session** (your digital literature box) and two or more **Zettelkasten Sessions** (your main slip-box).
+
+To ensure your notes maintain the rigorous formatting required for high-level knowledge synthesis, these sessions are preconfigured with specific custom fields:
+
+**1. The Bibliography Session** This session is designed strictly for indexing your sources and capturing raw highlights. It comes preconfigured with the following fields to capture vital metadata:
+
+- **Author**
+
+- **Edition**
+
+- **Published Date**
+
+- **ISBN**
+
+- **Book Description**
+
+**2. The Zettelkasten Sessions** These sessions act as your "Main Slip-Box", housing your interconnected atomic notes. They are preconfigured with fields designed to capture deep thought and contextual relationships:
+
+- **Luhmann Notes (Latex/MD Type):** A rich-text editor for drafting your atomic claims in your own words, complete with LaTeX support for complex formatting.
+
+- **Original Note:** A reference field to hold the raw text or highlight that inspired the atomic note.
+
+- **Purpose:** To define exactly why this note exists and what argument it serves.
+
+- **Comments:** For ongoing personal reflections or structural notes.
+
+#### Templated vs. Custom Structures
+
+During the creation process, you are not forced into a rigid box. You will be given the option to either **add your own custom session and root task names** or apply a **templated structure**. If you choose the template, the system will automatically build out the **5-Domain Matrix** (Philosophy & Meaning, Social Systems, Information & Cybernetics, The Individual, and History & Future) as your foundational root sessions.
+
+Once this setup process is complete, your new Zettelkasten group will be fully initialised and available for selection in both the dedicated Zettelkasten App interface and your standard Session Groups dropdown. *(More details on navigating and operating within this interface will be explained in the following sections).*
+
+## The Zettelkasten Interface
+
+The Mind Dump Zettelkasten interface is structured into three primary horizontal zones—referred to as "Tiers" in the codebase—designed to separate the collection of raw information from the deep processing of permanent notes.
+
+Here is how the interface is laid out:
+
+**1. The Source Horizon (Tier 1)** This is the uppermost section of the workspace, functioning as a horizontal carousel for unprocessed records. It holds raw information before it is formally placed into your Zettelkasten.
+
+- **The Scratch/Bibliography Switch:** At the top of this zone, a toggle allows you to switch the horizon between two distinct modes:
+
+  - **Scratch Mode:** Displays your "Scratch Feed," which acts as a temporary capture zone for fleeting, daily notes that must eventually be processed or deleted.
+
+  - **Bibliography Mode:** Shifts the view to your literature box, displaying your reading materials and highlights.
+
+- **Bibliography Book & Note Selectors:** When set to Bibliography mode, the interface first acts as a **Book Selector**, displaying your sources as selectable book cards. Clicking on a specific book drills down into the **Note Selector** view, which displays all the raw subtasks and reading highlights specifically associated with that book. A back button allows you to navigate out of the notes and return to the main book list.
+
+**2. The Active Session Horizon (Tier 2)** Sitting just below the Source Horizon is the Session Horizon. This acts as your **Session Selector**.
+
+- It displays a row of session cards, which represent the top-level domains (like "Philosophy & Meaning" or "Social Systems") acting as your physical drawers.
+
+- By clicking a session card in this horizon, you select your active domain, which tells the system to load that specific domain's interconnected notes into the main workspace below.
+
+**3. The Open Drawer View / Matrix (Tier 3)** This is the largest area at the bottom of the screen, referred to as the "canvas". It is your active workspace where the actual Zettelkasten tree is visualised.
+
+- Once you select a session in Tier 2, its cards are rendered here on a vast, draggable canvas.
+
+- This visual layout allows you to drag unprocessed notes from the Source Horizon (Tier 1) down into the Open Drawer View (Tier 3) to physically place them into your knowledge tree.
+
+**Placement of the Search Boxes** The search tools are not mixed in with your raw notes. Instead, they are housed in the **Matrix Toolbar**, which sits directly at the top of the Open Drawer View (Tier 3). This toolbar contains inputs for standard keyword and text filtering, as well as the specialised **Luhmann Search**, which queries your curated index to help you find the exact entry point for a new idea.
+
