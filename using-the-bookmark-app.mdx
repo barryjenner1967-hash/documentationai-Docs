@@ -151,6 +151,19 @@ For page clips, the URL is extracted from the scratch text and placed in the **W
 
 Scratch items can come from the extension, email capture, SMS, Mobile PWA app or other integrations. Use **Add as Sub-Task** to place a scratch item under an existing folder task — this is the primary workflow for turning a clipped page into a bookmark inside a specific folder.
 
+### **D. Directly from the Bookmark View (**`bookmarks.html`**)**
+
+When a Web Clipper session is loaded, right-click on the **empty background** of the bookmark grid (not on an existing card) to open a creation menu:
+
+| **Action**       | **Fields**                                                             | **Result**                                                                                      |
+| :--------------- | :--------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| **Add Bookmark** | Name and Website URL (both required)                                   | Creates a bookmark task under the current folder, or at session root on the Dashboard           |
+| **Add Folder**   | Folder name; optional folder URL; required first bookmark name and URL | Creates a folder task plus one child bookmark (required so the folder appears on the Dashboard) |
+
+New items are placed under the folder you are currently viewing. On the Dashboard, they are created at the session root. Favicons are fetched automatically when a URL is saved. The grid updates immediately without refreshing the page.
+
+This menu is not available while search is active or when no session is selected.
+
 ---
 
 ## 4. Favicons and Placeholder Icons
@@ -296,15 +309,15 @@ The bookmarks page has an instant search feature. The user just starts typing an
 
 ### Context menu (right-click)
 
-| Action          | Folders | Bookmarks / Hybrids |
-| --------------- | ------- | ------------------- |
-| Rename          | ✓       | ✓                   |
-| Edit URL        | —       | ✓                   |
-| Open in New Tab | —       | ✓                   |
-| Copy URL        | —       | ✓                   |
-| Delete          | ✓       | ✓                   |
+| Action          | Folders        | Bookmarks / Hybrids |
+| --------------- | -------------- | ------------------- |
+| Rename          | ✓              | ✓                   |
+| Edit URL        | —              | ✓                   |
+| Open in New Tab | —              | ✓                   |
+| Copy URL        | —              | ✓                   |
+| Delete          | ✓ (when empty) | ✓                   |
 
-Deleting a folder with children removes the folder and its contents.
+Deleting a folder with children raises an error to prevent you from accidently deleting important bookmark links.
 
 ### Appearance
 
