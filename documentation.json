@@ -130,11 +130,6 @@
             "icon": "layers",
             "pages": [
               {
-                "title": "Niklas Luhmann - Zettelkasten",
-                "path": "niklas-luhmann---zettelkasten",
-                "icon": "book-audio"
-              },
-              {
                 "title": "Personal Databases",
                 "path": "personal-database",
                 "icon": "database"
@@ -203,6 +198,11 @@
                 "title": "Google Drive & OAuth",
                 "path": "google-drive-oauth",
                 "icon": "folder-check"
+              },
+              {
+                "title": "The Zettelkasten",
+                "path": "niklas-luhmann---zettelkasten",
+                "icon": "book-audio"
               }
             ]
           },
