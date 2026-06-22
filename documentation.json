@@ -126,11 +126,6 @@
             ]
           },
           {
-            "group": "Start with Mind Mapping",
-            "pages": [],
-            "icon": "brain-circuit"
-          },
-          {
             "group": "Core Concepts",
             "icon": "layers",
             "pages": [
@@ -234,6 +229,11 @@
                 "title": "Features",
                 "path": "features",
                 "icon": "file-text"
+              },
+              {
+                "group": "Start with Mind Mapping",
+                "pages": [],
+                "icon": "brain-circuit"
               }
             ]
           }
