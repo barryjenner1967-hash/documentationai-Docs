@@ -84,6 +84,11 @@
             "icon": "compass",
             "pages": [
               {
+                "title": "Session Dashboard",
+                "path": "session-dashboard",
+                "icon": "lucide-layout-dashboard"
+              },
+              {
                 "title": "Using the Bookmark App",
                 "path": "using-the-bookmark-app",
                 "icon": "bookmark-check"
