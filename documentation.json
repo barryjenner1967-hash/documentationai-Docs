@@ -211,6 +211,21 @@
                 "icon": "file-text"
               }
             ]
+          },
+          {
+            "group": "Additional Documents",
+            "pages": [
+              {
+                "title": "Accessing A Shared Notebook",
+                "path": "accessing-a-shared-notebook",
+                "icon": "lucide-share2"
+              },
+              {
+                "title": "Document Sharing",
+                "path": "document-sharing",
+                "icon": "lucide-share2"
+              }
+            ]
           }
         ]
       },

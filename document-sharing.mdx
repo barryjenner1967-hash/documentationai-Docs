@@ -1,0 +1,49 @@
+---
+title: |
+  How Notebook Sharing Works in Mind Dump
+---
+Mind Dump is built from the ground up around **Zero-Knowledge, End-to-End Encryption (E2EE)**. This means your private thoughts and notes are encrypted on your device _before_ they ever touch our servers. We never hold the key to your notes, which means we cannot read them, index them, or sell your data. No one can—except you and the people you explicitly choose to share with.
+
+When you create a shared link in Mind Dump, you are creating a secure, read-only "snapshot" of your document. Here is how to use this feature safely and effectively.
+
+## The Two-Factor Security Model
+
+To keep your shared notes completely safe without compromising on ease of use, Mind Dump uses a smart two-factor approach to encryption. Unlocking a note requires two distinct pieces of information:
+
+```typescript
+[ Web Link (Contains Secret Salt) ]  +  [ Passcode (Your Secret Word) ]  =  [ Decrypted Note ]
+
+```
+
+1. **The Web Link (The Salt):** When you click **Share**, Mind Dump generates a unique web link. Tucked inside the end of this link—after a `#` symbol—is a piece of cryptographic randomness called a "salt". Web browsers **never** send anything after the `#` symbol to our servers. Our server only sees that a document exists; it never sees the cryptographic key hidden inside the link.
+2. **The Passcode (The Key):** You choose a memorable, human-friendly passcode (containing a capital letter and a number, like `Summer2026` or `Meeting10`).
+
+When your recipient opens the link, their web browser combines the secret code in the link with the passcode they type in. Only when both parts come together does the note decrypt right before their eyes. **Without the passcode, the web link is completely useless.**
+
+## Safe Deployment: How to Share
+
+Because the web link and the passcode work together like a lock and key, **you should never send them using the same messaging route**. If a hacker intercepts a single email or text message containing both the link and the passcode, they could open the note.
+
+To ensure maximum safety, always split your delivery across two different channels:
+
+- **The Web Link:** Safe to send via standard email, Slack, or any messaging platform.
+- **The Passcode:** Send this separately! You can:
+  - Send it from a **different email address**.
+  - Send it as an **SMS or WhatsApp message**.
+  - Tell them **over the telephone**.
+  - Simply tell them **in person**.
+
+> **Rule of Thumb:** If you email the link, text the passcode. If you message the link on Teams, call them with the passcode.
+
+## Extra Protection: Expiry & Self-Destruction
+
+When creating a share link, you can set additional rules to control how long your note remains available:
+
+- **Set an Expiry Date:** Choose a Time-to-Live (TTL) for your note (such as 1 day, 7 days, or 30 days). Once that date passes, Mind Dump automatically purges the encrypted snapshot from our servers forever.
+- **Burn on Opening:** Need to send sensitive information like a password or a private code? Enable **Burn on Opening**. The moment your recipient unlocks and opens the note, the server permanently deletes the encrypted record. Once they close their browser tab, the note is gone for good and can never be opened again.
+
+## The Power of Zero-Knowledge Sharing
+
+With Mind Dump, you never have to trust us with your privacy—our software is mathematically designed so that trust isn't required.
+
+By keeping your master keys local, using intelligent URL hash fragments, and splitting your passcodes across separate delivery routes, you retain 100% control over your data at all times.
