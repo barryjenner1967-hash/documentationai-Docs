@@ -47,3 +47,17 @@ When creating a share link, you can set additional rules to control how long you
 With Mind Dump, you never have to trust us with your privacy—our software is mathematically designed so that trust isn't required.
 
 By keeping your master keys local, using intelligent URL hash fragments, and splitting your passcodes across separate delivery routes, you retain 100% control over your data at all times.
+
+Here are the additional sections you can insert into both instructions to explain why a lost share URL or hash fragment can never be recreated.
+
+### Addition for the Sender Instructions
+
+> #### ⚠️ Important: Share Links Cannot Be Recreated
+>
+> Every time you click **Share**, Mind Dump generates a brand-new, unique **random salt** that is placed inside the URL hash fragment.
+>
+> Because this salt is generated on the fly in your browser and is **never saved on our server or stored in your account**, it is mathematically impossible to recreate or recover the exact same URL and hash fragment if you lose it.
+>
+> - **If you lose the link:** You will need to delete the existing share and generate a new one (which creates a completely new link, salt, and encryption key).
+> - **If you delete the share:** The encrypted record is removed from the server permanently. Even if someone still has the old URL and passcode, the note no longer exists and cannot be restored.
+
