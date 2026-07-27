@@ -41,6 +41,7 @@ When creating a share link, you can set additional rules to control how long you
 
 - **Set an Expiry Date:** Choose a Time-to-Live (TTL) for your note (such as 1 day, 7 days, or 30 days). Once that date passes, Mind Dump automatically purges the encrypted snapshot from our servers forever.
 - **Burn on Opening:** Need to send sensitive information like a password or a private code? Enable **Burn on Opening**. The moment your recipient unlocks and opens the note, the server permanently deletes the encrypted record. Once they close their browser tab, the note is gone for good and can never be opened again.
+- 🔒 "No Clipboard Copy" Mode & Its Limits: When sharing a note, you can enable **No Clipboard Copy**. This removes the "Copy Text" button and prevents the recipient from highlighting or selecting text on their screen to copy it. **Important Note on Limitations:** While this prevents simple copy-pasting, **no digital system can entirely prevent a recipient from capturing information shown on their screen**. A recipient can still use screen capture software, browser extensions, optical character recognition (OCR), or take a photo of the monitor with a phone. _Use this feature to deter accidental or quick copy-pasting, but only share sensitive notes with people you fundamentally trust._
 
 ## The Power of Zero-Knowledge Sharing
 
@@ -50,14 +51,14 @@ By keeping your master keys local, using intelligent URL hash fragments, and spl
 
 Here are the additional sections you can insert into both instructions to explain why a lost share URL or hash fragment can never be recreated.
 
-### Addition for the Sender Instructions
+## ⚠️ Important: Share Links Cannot Be Recreated
 
-> #### ⚠️ Important: Share Links Cannot Be Recreated
->
-> Every time you click **Share**, Mind Dump generates a brand-new, unique **random salt** that is placed inside the URL hash fragment.
->
-> Because this salt is generated on the fly in your browser and is **never saved on our server or stored in your account**, it is mathematically impossible to recreate or recover the exact same URL and hash fragment if you lose it.
->
-> - **If you lose the link:** You will need to delete the existing share and generate a new one (which creates a completely new link, salt, and encryption key).
-> - **If you delete the share:** The encrypted record is removed from the server permanently. Even if someone still has the old URL and passcode, the note no longer exists and cannot be restored.
+Every time you click **Share**, Mind Dump generates a brand-new, unique **random salt** that is placed inside the URL hash fragment.
+
+Because this salt is generated on the fly in your browser and is **never saved on our server or stored in your account**, it is mathematically impossible to recreate or recover the exact same URL and hash fragment if you lose it.
+
+- **If you lose the link:** You will need to delete the existing share and generate a new one (which creates a completely new link, salt, and encryption key).
+- **If you delete the share:** The encrypted record is removed from the server permanently. Even if someone still has the old URL and passcode, the note no longer exists and cannot be restored.
+
+
 
