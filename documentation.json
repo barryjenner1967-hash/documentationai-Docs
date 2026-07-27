@@ -84,14 +84,9 @@
             "icon": "compass",
             "pages": [
               {
-                "title": "Session Dashboard",
-                "path": "session-dashboard",
-                "icon": "lucide-layout-dashboard"
-              },
-              {
-                "title": "Using the Bookmark App",
-                "path": "using-the-bookmark-app",
-                "icon": "bookmark-check"
+                "title": "Whiteboard - Alpha Release",
+                "path": "whiteboard---alpha-release",
+                "icon": "clipboard-icon"
               },
               {
                 "title": "Using the Calendar View",
@@ -112,23 +107,13 @@
                 "title": "Using the Brainstorm Tool",
                 "path": "using-the-brainstorm-tool",
                 "icon": "brain-circuit-icon"
-              },
-              {
-                "title": "Whiteboard - Alpha Release",
-                "path": "whiteboard---alpha-release",
-                "icon": "clipboard-icon"
-              },
-              {
-                "title": "Google Drive in Mind Dump",
-                "path": "google-drive-in-mind-dump",
-                "icon": "hard-drive-icon"
-              },
-              {
-                "title": "Using the Zettelkasten - Alpha release",
-                "path": "using-the-zettelkasten---alpha-release",
-                "icon": "book-audio"
               }
             ]
+          },
+          {
+            "group": "Start with Mind Mapping",
+            "pages": [],
+            "icon": "brain-circuit"
           },
           {
             "group": "Core Concepts",
@@ -190,24 +175,14 @@
                 "icon": "arrow-down-az"
               },
               {
-                "title": "Whiteboarding",
-                "path": "whiteboarding",
-                "icon": "circuit-board"
-              },
-              {
                 "title": "LaTeX",
                 "path": "latex",
                 "icon": "edit"
               },
               {
-                "title": "Google Drive & OAuth",
-                "path": "google-drive-oauth",
-                "icon": "folder-check"
-              },
-              {
-                "title": "The Zettelkasten",
-                "path": "niklas-luhmann---zettelkasten",
-                "icon": "book-audio"
+                "title": "Google Docs Integration",
+                "path": "google-docs-integration",
+                "icon": "folder-open"
               }
             ]
           },
@@ -234,11 +209,6 @@
                 "title": "Features",
                 "path": "features",
                 "icon": "file-text"
-              },
-              {
-                "group": "Start with Mind Mapping",
-                "pages": [],
-                "icon": "brain-circuit"
               }
             ]
           }
